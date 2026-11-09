@@ -1,0 +1,159 @@
+[debug] [2026-11-09T23:37:51.490Z] ----------------------------------------------------------------------
+[debug] [2026-11-09T23:37:51.492Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase use
+[debug] [2026-11-09T23:37:51.492Z] CLI Version:   15.7.0
+[debug] [2026-11-09T23:37:51.492Z] Platform:      darwin
+[debug] [2026-11-09T23:37:51.493Z] Node Version:  v20.20.0
+[debug] [2026-11-09T23:37:51.493Z] Time:          Mon Nov 09 2026 20:37:51 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-09T23:37:51.493Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-09T23:37:51.494Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-11-09T23:37:51.634Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-09T23:37:51.635Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[error] 
+[error] Error: No active project
+[debug] [2026-11-09T23:37:52.010Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-11-09T23:37:52.011Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-11-09T23:38:03.415Z] ----------------------------------------------------------------------
+[debug] [2026-11-09T23:38:03.417Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase deploy --only hosting,firestore --project harpa-palavra
+[debug] [2026-11-09T23:38:03.417Z] CLI Version:   15.7.0
+[debug] [2026-11-09T23:38:03.417Z] Platform:      darwin
+[debug] [2026-11-09T23:38:03.417Z] Node Version:  v20.20.0
+[debug] [2026-11-09T23:38:03.418Z] Time:          Mon Nov 09 2026 20:38:03 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-09T23:38:03.418Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-09T23:38:04.650Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-09T23:38:04.651Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[debug] [2026-11-09T23:38:04.651Z] [iam] checking project harpa-palavra for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-09T23:38:04.652Z] Checked if tokens are valid: false, expires at: 1793313680751
+[debug] [2026-11-09T23:38:04.652Z] Checked if tokens are valid: false, expires at: 1793313680751
+[debug] [2026-11-09T23:38:04.653Z] > refreshing access token with scopes: []
+[debug] [2026-11-09T23:38:04.656Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-11-09T23:38:04.657Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-09T23:38:04.933Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-11-09T23:38:04.934Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-09T23:38:04.949Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions [none]
+[debug] [2026-11-09T23:38:04.949Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions  x-goog-user-project=harpa-palavra
+[debug] [2026-11-09T23:38:04.950Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-09T23:38:05.989Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions 403
+[debug] [2026-11-09T23:38:05.989Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"error":{"code":403,"message":"Caller does not have required permission to use project harpa-palavra. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=harpa-palavra and then retry. Propagation of the new permission may take a few minutes.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"consumer":"projects/harpa-palavra","consoleUrl":"https://console.developers.google.com/iam-admin/iam?project=harpa-palavra","containerInfo":"harpa-palavra","service":"cloudresourcemanager.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project harpa-palavra. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=harpa-palavra and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam?project=harpa-palavra"}]}]}}
+[debug] [2026-11-09T23:38:05.990Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions had HTTP Error: 403, Caller does not have required permission to use project harpa-palavra. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=harpa-palavra and then retry. Propagation of the new permission may take a few minutes.
+[debug] [2026-11-09T23:38:05.990Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:38:05.991Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:38:05.991Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra [none]
+[debug] [2026-11-09T23:38:06.440Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra 403
+[debug] [2026-11-09T23:38:06.440Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-11-09T23:38:06.441Z] Request to https://firebase.googleapis.com/v1beta1/projects/harpa-palavra had HTTP Error: 403, The caller does not have permission
+[debug] [2026-11-09T23:38:06.641Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/harpa-palavra had HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/jusanmagno/.nvm/versions/node/v20.20.0/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/Users/jusanmagno/.nvm/versions/node/v20.20.0/lib/node_modules/firebase-tools/lib/apiv2.js:330:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project harpa-palavra. Please make sure the project exists and your account has permission to access it.
+[debug] [2026-11-09T23:40:39.489Z] ----------------------------------------------------------------------
+[debug] [2026-11-09T23:40:39.491Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase deploy --only hosting,firestore --project harpa-palavra
+[debug] [2026-11-09T23:40:39.491Z] CLI Version:   15.7.0
+[debug] [2026-11-09T23:40:39.491Z] Platform:      darwin
+[debug] [2026-11-09T23:40:39.491Z] Node Version:  v20.20.0
+[debug] [2026-11-09T23:40:39.491Z] Time:          Mon Nov 09 2026 20:40:39 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-09T23:40:39.491Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-09T23:40:40.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-09T23:40:40.504Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[debug] [2026-11-09T23:40:40.505Z] [iam] checking project harpa-palavra for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-09T23:40:40.505Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:40.505Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:40.506Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions [none]
+[debug] [2026-11-09T23:40:40.506Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions  x-goog-user-project=harpa-palavra
+[debug] [2026-11-09T23:40:40.507Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-09T23:40:41.446Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions 200
+[debug] [2026-11-09T23:40:41.447Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-09T23:40:41.447Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:41.447Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:41.447Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra [none]
+[debug] [2026-11-09T23:40:41.888Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra 200
+[debug] [2026-11-09T23:40:41.888Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra {"projectId":"harpa-palavra","projectNumber":"264623226795","displayName":"harpa-palavra","name":"projects/harpa-palavra","resources":{"hostingSite":"harpa-palavra"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_0f5c078f-63b1-481c-b4b2-a30dd1699237"}
+[info] 
+[info] === Deploying to 'harpa-palavra'...
+[info] 
+[info] i  deploying firestore, hosting 
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2026-11-09T23:40:41.893Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:41.894Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:41.894Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com [none]
+[debug] [2026-11-09T23:40:41.894Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com  x-goog-user-project=harpa-palavra
+[debug] [2026-11-09T23:40:43.216Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com 200
+[debug] [2026-11-09T23:40:43.216Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com [omitted]
+[warn] ⚠  firestore: missing required API firestore.googleapis.com. Enabling now... 
+[debug] [2026-11-09T23:40:43.217Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:43.217Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:43.217Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com:enable [none]
+[debug] [2026-11-09T23:40:43.217Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com:enable  x-goog-user-project=harpa-palavra
+[debug] [2026-11-09T23:40:44.056Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com:enable 200
+[debug] [2026-11-09T23:40:44.056Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/harpa-palavra/services/firestore.googleapis.com:enable [omitted]
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2026-11-09T23:40:54.080Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:54.081Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:54.081Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default) [none]
+[debug] [2026-11-09T23:40:56.054Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default) 404
+[debug] [2026-11-09T23:40:56.054Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default) {"error":{"code":404,"message":"Project 'harpa-palavra' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[info] i  firestore: Creating the new Firestore database (default)... 
+[debug] [2026-11-09T23:40:56.057Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:56.057Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:56.059Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/harpa-palavra/databases databaseId=%28default%29
+[debug] [2026-11-09T23:40:56.059Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/harpa-palavra/databases {"locationId":"nam5","type":"FIRESTORE_NATIVE","databaseEdition":"STANDARD","deleteProtectionState":"DELETE_PROTECTION_DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED"}
+[debug] [2026-11-09T23:40:56.886Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/harpa-palavra/databases 200
+[debug] [2026-11-09T23:40:56.887Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/harpa-palavra/databases {"name":"projects/harpa-palavra/databases/(default)/operations/GlYE9VHvkr8kTM5BGWaXpRAqNW1hbgQiBRAC88STwBAG18m0iAgMCiga","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.CreateDatabaseMetadata"},"done":true,"response":{"@type":"type.googleapis.com/google.firestore.admin.v1.Database","name":"projects/harpa-palavra/databases/(default)","uid":"a5976619-41ce-4c24-bf92-ef51f504561a","createTime":"2026-11-09T23:40:56.779160Z","updateTime":"2026-11-09T23:40:56.779160Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-11-09T23:40:56.779160Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","etag":"IMf0wvKH/JcDMJjrwfKH/JcD"}}
+[debug] [2026-11-09T23:40:56.888Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:56.889Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:56.889Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/operations/GlYE9VHvkr8kTM5BGWaXpRAqNW1hbgQiBRAC88STwBAG18m0iAgMCiga [none]
+[debug] [2026-11-09T23:40:57.221Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/operations/GlYE9VHvkr8kTM5BGWaXpRAqNW1hbgQiBRAC88STwBAG18m0iAgMCiga 200
+[debug] [2026-11-09T23:40:57.221Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/operations/GlYE9VHvkr8kTM5BGWaXpRAqNW1hbgQiBRAC88STwBAG18m0iAgMCiga {"name":"projects/harpa-palavra/databases/(default)/operations/GlYE9VHvkr8kTM5BGWaXpRAqNW1hbgQiBRAC88STwBAG18m0iAgMCiga","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.CreateDatabaseMetadata"},"done":true,"response":{"@type":"type.googleapis.com/google.firestore.admin.v1.Database","name":"projects/harpa-palavra/databases/(default)","uid":"a5976619-41ce-4c24-bf92-ef51f504561a","createTime":"2026-11-09T23:40:56.779160Z","updateTime":"2026-11-09T23:40:56.779160Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-11-09T23:40:56.779160Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","etag":"IIzW1vKH/JcDMJjrwfKH/JcD"}}
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2026-11-09T23:40:57.225Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:57.225Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:57.225Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra:test [none]
+[debug] [2026-11-09T23:40:57.225Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra:test [omitted]
+[debug] [2026-11-09T23:40:57.940Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra:test 200
+[debug] [2026-11-09T23:40:57.942Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra:test {}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2026-11-09T23:40:57.945Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:57.945Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:57.946Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions [none]
+[debug] [2026-11-09T23:40:57.946Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-09T23:40:59.917Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions 200
+[debug] [2026-11-09T23:40:59.917Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"name":"projects/264623226795/sites/harpa-palavra/versions/abce3131d6744be1","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-09T23:40:59.918Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:59.918Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:40:59.918Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/harpa-palavra/releases pageSize=10&pageToken=
+[debug] [2026-11-09T23:41:01.015Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/harpa-palavra/releases 200
+[debug] [2026-11-09T23:41:01.015Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/harpa-palavra/releases {}
+[info] i  firestore: uploading rules firestore.rules... 
+[debug] [2026-11-09T23:41:01.016Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:01.016Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:01.018Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra/rulesets [none]
+[debug] [2026-11-09T23:41:01.018Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra/rulesets [omitted]
+[debug] [2026-11-09T23:41:01.489Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra/rulesets 200
+[debug] [2026-11-09T23:41:01.489Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/harpa-palavra/rulesets {"name":"projects/harpa-palavra/rulesets/45507e5e-7563-4425-aab2-b555fae1c539","source":{"files":[{"content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    function signedIn() { return request.auth != null; }\n    function admin() { return signedIn() && (request.auth.token.email == 'jusanmagno@gmail.com' || request.auth.token.admin == true); }\n    match /hymns/{hymn} { allow read: if true; allow write: if admin(); }\n    match /hymnEditions/{edition} { allow read: if true; allow write: if admin(); }\n    match /bibleTranslations/{translation} { allow read: if true; allow write: if admin(); }\n    match /bibleBooks/{book} { allow read: if true; allow write: if admin(); }\n    match /bibleVerses/{verse} { allow read: if true; allow write: if admin(); }\n    match /contentSources/{source} { allow read: if true; allow write: if admin(); }\n    match /importJobs/{job} { allow read, write: if admin(); }\n    match /users/{userId} {\n      allow read, create, update: if signedIn() && request.auth.uid == userId;\n      allow delete: if false;\n      match /favorites/{favorite} { allow read, write: if signedIn() && request.auth.uid == userId; }\n      match /playlists/{playlist} { allow read, write: if signedIn() && request.auth.uid == userId; }\n      match /readingProgress/{progress} { allow read, write: if signedIn() && request.auth.uid == userId; }\n    }\n  }\n}\n","name":"firestore.rules"}]},"createTime":"2026-11-09T23:41:01.362081Z","metadata":{"services":["cloud.firestore"]}}
+[debug] [2026-11-09T23:41:01.489Z] [rules] created ruleset projects/harpa-palavra/rulesets/45507e5e-7563-4425-aab2-b555fae1c539
+[info] i  firestore: deploying indexes... 
+[debug] [2026-11-09T23:41:01.490Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:01.491Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:01.491Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2026-11-09T23:41:03.364Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2026-11-09T23:41:03.364Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2026-11-09T23:41:03.365Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:03.365Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:03.365Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2026-11-09T23:41:05.724Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2026-11-09T23:41:05.724Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/harpa-palavra/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2026-11-09T23:41:05.724Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:05.724Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:05.724Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default) [none]
+[debug] [2026-11-09T23:41:06.008Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default) 200
+[debug] [2026-11-09T23:41:06.009Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default) {"name":"projects/harpa-palavra/databases/(default)","uid":"a5976619-41ce-4c24-bf92-ef51f504561a","createTime":"2026-11-09T23:40:56.779160Z","updateTime":"2026-11-09T23:40:56.779160Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-11-09T23:40:56.779160Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","etag":"IJ3C7vaH/JcDMOaD1vaH/JcD"}
+[debug] [2026-11-09T23:41:06.009Z] Creating new index: {"collectionGroup":"hymns","queryScope":"COLLECTION","fields":[{"fieldPath":"number","order":"ASCENDING"}]}
+[debug] [2026-11-09T23:41:06.009Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:06.009Z] Checked if tokens are valid: true, expires at: 1794271083934
+[debug] [2026-11-09T23:41:06.009Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/hymns/indexes [none]
+[debug] [2026-11-09T23:41:06.009Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/harpa-palavra/databases/(default)/collectionGroups/hymns/indexes {"fields":[{"fieldPath":"number","order":"ASCENDING"}],"queryScope":"COLLECTION"}

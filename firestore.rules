@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function admin() { return signedIn() && (request.auth.token.email == 'jusanmagno@gmail.com' || request.auth.token.admin == true); }
+    match /hymns/{hymn} { allow read: if true; allow write: if admin(); }
+    match /hymnEditions/{edition} { allow read: if true; allow write: if admin(); }
+    match /bibleTranslations/{translation} { allow read: if true; allow write: if admin(); }
+    match /bibleBooks/{book} { allow read: if true; allow write: if admin(); }
+    match /bibleVerses/{verse} { allow read: if true; allow write: if admin(); }
+    match /contentSources/{source} { allow read: if true; allow write: if admin(); }
+    match /importJobs/{job} { allow read, write: if admin(); }
+    match /users/{userId} {
+      allow read, create, update: if signedIn() && request.auth.uid == userId;
+      allow delete: if false;
+      match /favorites/{favorite} { allow read, write: if signedIn() && request.auth.uid == userId; }
+      match /playlists/{playlist} { allow read, write: if signedIn() && request.auth.uid == userId; }
+      match /readingProgress/{progress} { allow read, write: if signedIn() && request.auth.uid == userId; }
+    }
+  }
+}
