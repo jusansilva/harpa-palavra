@@ -1,1 +1,1 @@
-{"firestore":{"rules":"firestore.rules","indexes":"firestore.indexes.json"},"hosting":{"public":"out","ignore":["firebase.json","**/.*","**/node_modules/**"]}}
+{"firestore":{"rules":"firestore.rules","indexes":"firestore.indexes.json"},"hosting":{"public":".next-release","cleanUrls":true,"rewrites":[{"source":"**","destination":"/index.html"}],"headers":[{"source":"**","headers":[{"key":"Cache-Control","value":"no-cache, no-store, must-revalidate"}]}],"ignore":["firebase.json","**/.*","**/node_modules/**"]}}
