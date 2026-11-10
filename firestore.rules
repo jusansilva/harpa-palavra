@@ -16,6 +16,7 @@ service cloud.firestore {
       match /favorites/{favorite} { allow read, write: if signedIn() && request.auth.uid == userId; }
       match /playlists/{playlist} { allow read, write: if signedIn() && request.auth.uid == userId; }
       match /readingProgress/{progress} { allow read, write: if signedIn() && request.auth.uid == userId; }
+      match /studyNotes/{note} { allow read, write: if signedIn() && request.auth.uid == userId; }
     }
   }
 }

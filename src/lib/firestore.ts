@@ -1,4 +1,4 @@
-import { collection, doc, getDoc, getDocs, orderBy, query, setDoc, where } from "firebase/firestore";
+import { addDoc, collection, doc, getDoc, getDocs, orderBy, query, setDoc, where } from "firebase/firestore";
 import { getDb } from "./firebase";
 export type Hymn={id:string;number:number;title:string;author?:string;license:string;sourceId:string;key?:string;chordDataJson?:string};
 export type BibleTranslation={id:string;code:string;name:string;attribution:string;license:string};
@@ -10,3 +10,6 @@ export type BibleVerse={id:string;number:number;text:string};
 export async function listBibleBooks(translationId:string){const snap=await getDocs(query(collection(getDb(),"bibleBooks"),where("translationId","==",translationId)));return snap.docs.map(d=>({id:d.id,...d.data()}) as BibleBook).sort((a,b)=>a.position-b.position);}
 export async function readChapter(translationId:string,bookPosition:number,chapterNumber:number){const snap=await getDocs(query(collection(getDb(),"bibleVerses"),where("translationId","==",translationId),where("bookPosition","==",bookPosition),where("chapterNumber","==",chapterNumber),orderBy("number")));return snap.docs.map(d=>({id:d.id,...d.data()}) as BibleVerse);}
 export async function toggleHymnFavorite(uid:string,hymnId:string){const ref=doc(getDb(),"users",uid,"favorites",`hymn_${hymnId}`);const current=await getDoc(ref);if(current.exists()) return import("firebase/firestore").then(({deleteDoc})=>deleteDoc(ref));return setDoc(ref,{hymnId,createdAt:new Date().toISOString()});}
+export type StudyNote={id:string;translationId:string;bookPosition:number;bookName:string;chapter:number;verse:number;quote:string;body:string;createdAt:string;updatedAt:string};
+export async function createStudyNote(uid:string,note:Omit<StudyNote,"id"|"createdAt"|"updatedAt">){const now=new Date().toISOString();return addDoc(collection(getDb(),"users",uid,"studyNotes"),{...note,createdAt:now,updatedAt:now});}
+export async function listStudyNotes(uid:string){const snapshot=await getDocs(query(collection(getDb(),"users",uid,"studyNotes"),orderBy("updatedAt","desc")));return snapshot.docs.map(item=>({id:item.id,...item.data()}) as StudyNote);}
