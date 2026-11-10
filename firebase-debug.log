@@ -2984,3 +2984,738 @@
 [info] 
 [info] Project Console: https://console.firebase.google.com/project/harpa-palavra/overview
 [info] Hosting URL: https://harpa-palavra.web.app
+[debug] [2026-11-10T01:16:31.277Z] ----------------------------------------------------------------------
+[debug] [2026-11-10T01:16:31.279Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase deploy --only hosting --project harpa-palavra
+[debug] [2026-11-10T01:16:31.279Z] CLI Version:   15.7.0
+[debug] [2026-11-10T01:16:31.279Z] Platform:      darwin
+[debug] [2026-11-10T01:16:31.280Z] Node Version:  v20.20.0
+[debug] [2026-11-10T01:16:31.280Z] Time:          Mon Nov 09 2026 22:16:31 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-10T01:16:31.280Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-10T01:16:32.307Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-10T01:16:32.307Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[debug] [2026-11-10T01:16:32.308Z] [iam] checking project harpa-palavra for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-10T01:16:32.309Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:32.309Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:32.310Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions [none]
+[debug] [2026-11-10T01:16:32.310Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions  x-goog-user-project=harpa-palavra
+[debug] [2026-11-10T01:16:32.310Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:16:33.228Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions 200
+[debug] [2026-11-10T01:16:33.228Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:16:33.229Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:33.229Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:33.229Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra [none]
+[debug] [2026-11-10T01:16:33.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra 200
+[debug] [2026-11-10T01:16:33.680Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra {"projectId":"harpa-palavra","projectNumber":"264623226795","displayName":"harpa-palavra","name":"projects/harpa-palavra","resources":{"hostingSite":"harpa-palavra"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_8f6f697e-7978-478d-86c2-e5e6ea674fd5"}
+[info] 
+[info] === Deploying to 'harpa-palavra'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-10T01:16:33.685Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:33.685Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:33.685Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions [none]
+[debug] [2026-11-10T01:16:33.685Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-10T01:16:34.933Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions 200
+[debug] [2026-11-10T01:16:34.933Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"name":"projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[harpa-palavra]: beginning deploy... 
+[info] i  hosting[harpa-palavra]: found 39 files in .next-release 
+[debug] [2026-11-10T01:16:34.947Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-10T01:16:35.067Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.067Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.069Z] [hosting] hash cache [Lm5leHQtcmVsZWFzZQ] stored for 39 files
+[debug] [2026-11-10T01:16:35.069Z] [hosting][hash queue][FINAL] {"max":117,"min":9,"avg":14.64102564102564,"active":0,"complete":39,"success":39,"errored":0,"retried":0,"total":39,"elapsed":122}
+[debug] [2026-11-10T01:16:35.069Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0:populateFiles [none]
+[debug] [2026-11-10T01:16:35.069Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0:populateFiles {"files":{"/manifest.webmanifest":"f90b0e0d9a9c61cd6aeb46f53dd62e83c00c583fcb71518ab0ff93993bb9f4c9","/sw.js":"1e159cc2fae933c7d18e47d61f28659b8c2342f405a86b3848a2475056d30882","/index.txt":"4602db9bcac9dcfab83518077475da0818941405d6f96b4b2ce3da423f26228d","/hinos.txt":"5058dcb533c40943568c7e7fab2d880cb322fdd05dbda4f2db674f5c39a17310","/entrar.html":"2193bdffa90d34bff1499cd3913792db12ca87dc245e7b065a8ae64f873f828f","/hinos.html":"1628517902f6594398d6c7f72d186fb59e71cfe6bd23992875981d521dc30288","/entrar.txt":"d2337b99f48c1239f7e8a9f911a398f2d719791dcac9a11965480e13c1e74667","/admin.txt":"d13096960e587940b9b2553deeb4cc7dea311ee644c92fdb9d286f790a89b037","/import-examples/biblia-livre-traducao.json":"8e297e5d7ce00e153ced3fd3fa64c5adb53681555ae1a78a73813adecfeb0c7a","/biblia.txt":"073903e9b01267bd441cfa56d7bcc9d8245016cfd4995eb12617b82726d9056c","/index.html":"70cec904b0516a55bea243479597d339194bf3b24e13ce1a61f819a28b77485f","/biblia.html":"e74d87ec09e615d3e6e92d03415852b8bea38be0fcecd39965a6e3e33ba6dd35","/import-examples/biblia-livre-3-versiculos.json":"45757efcccdeec58af4f2aec1b0f7955d10168fe4fed0c1c4f5665969d455dd8","/_next/static/css/76eb3dfbf2b1c921.css":"05be51513922209aebf86a538450dd883ab258c84b0e851b8d91c097e0419037","/admin.html":"d4e2598acd314f01ce5ff717808c54ee3a3c6774665cb5982deb028a9f3b1db5","/404.html":"b0e247c5471a685b4cabbe208d899e6d612a8317863ce528b38ebdaf39c2f53f","/_next/static/chunks/webpack-b73e00219e5df86d.js":"94fea2974b26c95310dd478cd4038ec8947dc12023c9616f15b4329c5ac7f4b6","/_next/static/chunks/pages/_error-cb2a52f75f2162e2.js":"c795dab089f7754c12ef30c4bff9a93b1610fdd84f6611b30c2427c4310fc597","/_next/static/chunks/main-app-e95fe1c6ffe61cf9.js":"8706e0b26b2ab46743a28720d3c433057a80ba34662502119ad8cb11173f4633","/_next/static/chunks/app/page-e0ddd3a0531b3281.js":"3a7f0af10e51061285198f8a553b44e8110d672de2679b8a5b333fd56d0829df","/_next/static/chunks/pages/_app-7d307437aca18ad4.js":"69019bfa0c93292c3ebabbec29f7f157eebbecc2fec618d51b28c093afd0a098","/_next/static/chunks/app/layout-618eb5d5b358dbdd.js":"35e1938f8db535662366250c112c85fa574a1e8ff6af24e46d2ad53ca3a1f64c","/_next/static/chunks/app/hinos/page-048b819cb3ce8bd3.js":"8a02d6c49ce5ffb861c631bea2e0caa1ad09ea3c5c160a0527cce8108ec9c758","/_next/static/chunks/app/entrar/page-82d47ae8386e729f.js":"a37981e70c68dad229485b328f991417c8909850bcd86d710ca83502e1f4b13a","/_next/static/chunks/app/admin/page-4748a36be13e5277.js":"47ceb0ad1d802cb5ec756396abf9834128c41aaad2ce9850e561903a52d92d89","/_next/static/cd-r4AsL4NheglvFJTBLx/_ssgManifest.js":"02dbc1aeab6ef0a6ff2ff9a1643158cf9bb38929945eaa343a3627dee9ba6778","/_next/static/cd-r4AsL4NheglvFJTBLx/_buildManifest.js":"595d3498133088a9c73c0bd1c6f163a79acf8225625325830ddfc26e093008eb","/_next/static/chunks/app/biblia/page-fc5b477dbfa6864f.js":"51f919775b1014eac65efece73ba3e5dfa514cc13df1f929b1895bc09bc45793","/_next/static/chunks/app/_not-found/page-079ff5abf16b04fa.js":"c018af6f86e043d2e95c120619cd0406bef95d5aa4481a669084939aff89db1f","/_next/static/chunks/ae6eea6a-fba0135f8aac4528.js":"f34b515ed49dcb0affeb7542932d82e88150e3f93448c327d9f68ef4346b9aa1","/_next/static/chunks/main-2ee3df819357997f.js":"b6897e22714a28a4f0e91b9bdcdf1bdd93ab929e9f656293c627a2bccea9add7","/_next/static/chunks/polyfills-42372ed130431b0a.js":"67dee1c02c6a6700d63b5c1898cf2df618101a68a395db469192763d24925a23","/_next/static/chunks/477-82a3e2a129903f5b.js":"8477fb436962f68f640b9b46154e53e2257f8acb22aa29f09c9611932259ed41","/_next/static/chunks/255-15b9cc804e0d9c7d.js":"a4a8397a645592256c07ff75f2cc0d2eca9b606a834ad2566b2b94e5d3638e06","/_next/static/chunks/4bd1b696-c023c6e3521b1417.js":"df36eebef505f2540041fc65bb8d4c6f3e55585b44a95eb2d17257e51437b2ff","/_next/static/chunks/framework-28b60818f5cffd83.js":"eb58630e55e9311dbb6bad11d8a5cd264d160b16ffe2265cc1c178956f696fc4","/_next/static/chunks/bc9e92e6-3c45f03f1dfcd780.js":"493919f7d19129ed7dfd8dbc606630a8161722e09eda48bd75ce4515c6c20b99","/images/harpa-palavra-app-icon.png":"0cad76e940bee1a685515275eee6fae5f4f6463bd856c02fe24866ee08052fde","/images/biblia-livre-cover.png":"edee993ff6cab89434cb476c8f93fcd6d7ed0255893a22918262073e375e5a33"}}
+[debug] [2026-11-10T01:16:35.552Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0:populateFiles 200
+[debug] [2026-11-10T01:16:35.552Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0:populateFiles {"uploadRequiredHashes":["8a02d6c49ce5ffb861c631bea2e0caa1ad09ea3c5c160a0527cce8108ec9c758","073903e9b01267bd441cfa56d7bcc9d8245016cfd4995eb12617b82726d9056c","70cec904b0516a55bea243479597d339194bf3b24e13ce1a61f819a28b77485f","4602db9bcac9dcfab83518077475da0818941405d6f96b4b2ce3da423f26228d","b0e247c5471a685b4cabbe208d899e6d612a8317863ce528b38ebdaf39c2f53f","1628517902f6594398d6c7f72d186fb59e71cfe6bd23992875981d521dc30288","5058dcb533c40943568c7e7fab2d880cb322fdd05dbda4f2db674f5c39a17310","d4e2598acd314f01ce5ff717808c54ee3a3c6774665cb5982deb028a9f3b1db5","d13096960e587940b9b2553deeb4cc7dea311ee644c92fdb9d286f790a89b037","e74d87ec09e615d3e6e92d03415852b8bea38be0fcecd39965a6e3e33ba6dd35","2193bdffa90d34bff1499cd3913792db12ca87dc245e7b065a8ae64f873f828f","d2337b99f48c1239f7e8a9f911a398f2d719791dcac9a11965480e13c1e74667"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files"}
+[debug] [2026-11-10T01:16:35.552Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.552Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.553Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:35.554Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/8a02d6c49ce5ffb861c631bea2e0caa1ad09ea3c5c160a0527cce8108ec9c758 [none]
+[debug] [2026-11-10T01:16:35.554Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/8a02d6c49ce5ffb861c631bea2e0caa1ad09ea3c5c160a0527cce8108ec9c758 [stream]
+[debug] [2026-11-10T01:16:35.555Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/073903e9b01267bd441cfa56d7bcc9d8245016cfd4995eb12617b82726d9056c [none]
+[debug] [2026-11-10T01:16:35.555Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/073903e9b01267bd441cfa56d7bcc9d8245016cfd4995eb12617b82726d9056c [stream]
+[debug] [2026-11-10T01:16:35.556Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/70cec904b0516a55bea243479597d339194bf3b24e13ce1a61f819a28b77485f [none]
+[debug] [2026-11-10T01:16:35.556Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/70cec904b0516a55bea243479597d339194bf3b24e13ce1a61f819a28b77485f [stream]
+[debug] [2026-11-10T01:16:35.556Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/4602db9bcac9dcfab83518077475da0818941405d6f96b4b2ce3da423f26228d [none]
+[debug] [2026-11-10T01:16:35.557Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/4602db9bcac9dcfab83518077475da0818941405d6f96b4b2ce3da423f26228d [stream]
+[debug] [2026-11-10T01:16:35.557Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/b0e247c5471a685b4cabbe208d899e6d612a8317863ce528b38ebdaf39c2f53f [none]
+[debug] [2026-11-10T01:16:35.557Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/b0e247c5471a685b4cabbe208d899e6d612a8317863ce528b38ebdaf39c2f53f [stream]
+[debug] [2026-11-10T01:16:35.558Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/1628517902f6594398d6c7f72d186fb59e71cfe6bd23992875981d521dc30288 [none]
+[debug] [2026-11-10T01:16:35.558Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/1628517902f6594398d6c7f72d186fb59e71cfe6bd23992875981d521dc30288 [stream]
+[debug] [2026-11-10T01:16:35.559Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/5058dcb533c40943568c7e7fab2d880cb322fdd05dbda4f2db674f5c39a17310 [none]
+[debug] [2026-11-10T01:16:35.559Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/5058dcb533c40943568c7e7fab2d880cb322fdd05dbda4f2db674f5c39a17310 [stream]
+[debug] [2026-11-10T01:16:35.560Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d4e2598acd314f01ce5ff717808c54ee3a3c6774665cb5982deb028a9f3b1db5 [none]
+[debug] [2026-11-10T01:16:35.560Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d4e2598acd314f01ce5ff717808c54ee3a3c6774665cb5982deb028a9f3b1db5 [stream]
+[debug] [2026-11-10T01:16:35.561Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d13096960e587940b9b2553deeb4cc7dea311ee644c92fdb9d286f790a89b037 [none]
+[debug] [2026-11-10T01:16:35.561Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d13096960e587940b9b2553deeb4cc7dea311ee644c92fdb9d286f790a89b037 [stream]
+[debug] [2026-11-10T01:16:35.562Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/e74d87ec09e615d3e6e92d03415852b8bea38be0fcecd39965a6e3e33ba6dd35 [none]
+[debug] [2026-11-10T01:16:35.562Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/e74d87ec09e615d3e6e92d03415852b8bea38be0fcecd39965a6e3e33ba6dd35 [stream]
+[debug] [2026-11-10T01:16:35.563Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/2193bdffa90d34bff1499cd3913792db12ca87dc245e7b065a8ae64f873f828f [none]
+[debug] [2026-11-10T01:16:35.563Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/2193bdffa90d34bff1499cd3913792db12ca87dc245e7b065a8ae64f873f828f [stream]
+[debug] [2026-11-10T01:16:35.563Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d2337b99f48c1239f7e8a9f911a398f2d719791dcac9a11965480e13c1e74667 [none]
+[debug] [2026-11-10T01:16:35.563Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d2337b99f48c1239f7e8a9f911a398f2d719791dcac9a11965480e13c1e74667 [stream]
+[debug] [2026-11-10T01:16:35.564Z] [hosting][populate queue][FINAL] {"max":487,"min":487,"avg":487,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":497}
+[debug] [2026-11-10T01:16:35.564Z] [hosting] uploads queued: 12
+[debug] [2026-11-10T01:16:36.754Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/073903e9b01267bd441cfa56d7bcc9d8245016cfd4995eb12617b82726d9056c 200
+[debug] [2026-11-10T01:16:36.754Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/073903e9b01267bd441cfa56d7bcc9d8245016cfd4995eb12617b82726d9056c [stream]
+[debug] [2026-11-10T01:16:36.873Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/e74d87ec09e615d3e6e92d03415852b8bea38be0fcecd39965a6e3e33ba6dd35 200
+[debug] [2026-11-10T01:16:36.873Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/e74d87ec09e615d3e6e92d03415852b8bea38be0fcecd39965a6e3e33ba6dd35 [stream]
+[debug] [2026-11-10T01:16:36.874Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/5058dcb533c40943568c7e7fab2d880cb322fdd05dbda4f2db674f5c39a17310 200
+[debug] [2026-11-10T01:16:36.874Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/5058dcb533c40943568c7e7fab2d880cb322fdd05dbda4f2db674f5c39a17310 [stream]
+[debug] [2026-11-10T01:16:36.881Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/8a02d6c49ce5ffb861c631bea2e0caa1ad09ea3c5c160a0527cce8108ec9c758 200
+[debug] [2026-11-10T01:16:36.882Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/8a02d6c49ce5ffb861c631bea2e0caa1ad09ea3c5c160a0527cce8108ec9c758 [stream]
+[debug] [2026-11-10T01:16:36.883Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/2193bdffa90d34bff1499cd3913792db12ca87dc245e7b065a8ae64f873f828f 200
+[debug] [2026-11-10T01:16:36.883Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/2193bdffa90d34bff1499cd3913792db12ca87dc245e7b065a8ae64f873f828f [stream]
+[debug] [2026-11-10T01:16:36.904Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d4e2598acd314f01ce5ff717808c54ee3a3c6774665cb5982deb028a9f3b1db5 200
+[debug] [2026-11-10T01:16:36.904Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d4e2598acd314f01ce5ff717808c54ee3a3c6774665cb5982deb028a9f3b1db5 [stream]
+[debug] [2026-11-10T01:16:36.915Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d13096960e587940b9b2553deeb4cc7dea311ee644c92fdb9d286f790a89b037 200
+[debug] [2026-11-10T01:16:36.915Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d13096960e587940b9b2553deeb4cc7dea311ee644c92fdb9d286f790a89b037 [stream]
+[debug] [2026-11-10T01:16:36.918Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d2337b99f48c1239f7e8a9f911a398f2d719791dcac9a11965480e13c1e74667 200
+[debug] [2026-11-10T01:16:36.919Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/d2337b99f48c1239f7e8a9f911a398f2d719791dcac9a11965480e13c1e74667 [stream]
+[debug] [2026-11-10T01:16:36.945Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/b0e247c5471a685b4cabbe208d899e6d612a8317863ce528b38ebdaf39c2f53f 200
+[debug] [2026-11-10T01:16:36.945Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/b0e247c5471a685b4cabbe208d899e6d612a8317863ce528b38ebdaf39c2f53f [stream]
+[info] i  hosting: uploading new files [9/12] (75%) 
+[debug] [2026-11-10T01:16:37.004Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/1628517902f6594398d6c7f72d186fb59e71cfe6bd23992875981d521dc30288 200
+[debug] [2026-11-10T01:16:37.004Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/1628517902f6594398d6c7f72d186fb59e71cfe6bd23992875981d521dc30288 [stream]
+[debug] [2026-11-10T01:16:37.016Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/4602db9bcac9dcfab83518077475da0818941405d6f96b4b2ce3da423f26228d 200
+[debug] [2026-11-10T01:16:37.016Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/4602db9bcac9dcfab83518077475da0818941405d6f96b4b2ce3da423f26228d [stream]
+[debug] [2026-11-10T01:16:37.233Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/70cec904b0516a55bea243479597d339194bf3b24e13ce1a61f819a28b77485f 200
+[debug] [2026-11-10T01:16:37.233Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/3dfc85d353fe22a0/files/70cec904b0516a55bea243479597d339194bf3b24e13ce1a61f819a28b77485f [stream]
+[debug] [2026-11-10T01:16:37.233Z] [hosting][upload queue][FINAL] {"max":1680,"min":1201,"avg":1380.25,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":1681}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[harpa-palavra]: file upload complete 
+[debug] [2026-11-10T01:16:37.234Z] [hosting] deploy completed after 2299ms
+[debug] [2026-11-10T01:16:37.234Z] [
+  {
+    "config": {
+      "public": ".next-release",
+      "cleanUrls": true,
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            }
+          ]
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "harpa-palavra"
+    },
+    "version": "projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0"
+  }
+]
+[info] i  hosting[harpa-palavra]: finalizing version... 
+[debug] [2026-11-10T01:16:37.236Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:37.236Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:37.236Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/3dfc85d353fe22a0 updateMask=status%2Cconfig
+[debug] [2026-11-10T01:16:37.236Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/3dfc85d353fe22a0 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"**","headers":{"Cache-Control":"no-cache, no-store, must-revalidate"}}],"cleanUrls":true}}
+[debug] [2026-11-10T01:16:37.599Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/3dfc85d353fe22a0 200
+[debug] [2026-11-10T01:16:37.600Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/3dfc85d353fe22a0 {"name":"projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:16:34.907072Z","createUser":{"email":"jusanmagno@gmail.com"},"finalizeTime":"2026-11-10T01:16:37.792097Z","finalizeUser":{"email":"jusanmagno@gmail.com"}}
+[debug] [2026-11-10T01:16:37.600Z] [hosting] finalized version for harpa-palavra:[object Object]
+[info] ✔  hosting[harpa-palavra]: version finalized 
+[info] i  hosting[harpa-palavra]: releasing new version... 
+[debug] [2026-11-10T01:16:37.600Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:37.601Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:16:37.601Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases versionName=projects%2F264623226795%2Fsites%2Fharpa-palavra%2Fversions%2F3dfc85d353fe22a0
+[debug] [2026-11-10T01:16:37.601Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {}
+[debug] [2026-11-10T01:16:38.076Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases 200
+[debug] [2026-11-10T01:16:38.076Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794273397616000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:16:34.907072Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:16:37.792097Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:16:37.616Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[debug] [2026-11-10T01:16:38.076Z] [hosting] release: {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794273397616000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/3dfc85d353fe22a0","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:16:34.907072Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:16:37.792097Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:16:37.616Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[info] ✔  hosting[harpa-palavra]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/harpa-palavra/overview
+[info] Hosting URL: https://harpa-palavra.web.app
+[debug] [2026-11-10T01:18:20.108Z] ----------------------------------------------------------------------
+[debug] [2026-11-10T01:18:20.110Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase deploy --only hosting --project harpa-palavra
+[debug] [2026-11-10T01:18:20.111Z] CLI Version:   15.7.0
+[debug] [2026-11-10T01:18:20.111Z] Platform:      darwin
+[debug] [2026-11-10T01:18:20.111Z] Node Version:  v20.20.0
+[debug] [2026-11-10T01:18:20.111Z] Time:          Mon Nov 09 2026 22:18:20 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-10T01:18:20.111Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-10T01:18:21.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-10T01:18:21.229Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[debug] [2026-11-10T01:18:21.230Z] [iam] checking project harpa-palavra for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-10T01:18:21.233Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:21.233Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:21.234Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions [none]
+[debug] [2026-11-10T01:18:21.234Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions  x-goog-user-project=harpa-palavra
+[debug] [2026-11-10T01:18:21.234Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:18:22.286Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions 200
+[debug] [2026-11-10T01:18:22.286Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:18:22.287Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:22.287Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:22.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra [none]
+[debug] [2026-11-10T01:18:22.794Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra 200
+[debug] [2026-11-10T01:18:22.795Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra {"projectId":"harpa-palavra","projectNumber":"264623226795","displayName":"harpa-palavra","name":"projects/harpa-palavra","resources":{"hostingSite":"harpa-palavra"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_8f6f697e-7978-478d-86c2-e5e6ea674fd5"}
+[info] 
+[info] === Deploying to 'harpa-palavra'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-10T01:18:22.799Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:22.800Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:22.800Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions [none]
+[debug] [2026-11-10T01:18:22.800Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-10T01:18:24.304Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions 200
+[debug] [2026-11-10T01:18:24.304Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"name":"projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[harpa-palavra]: beginning deploy... 
+[info] i  hosting[harpa-palavra]: found 39 files in .next-release 
+[debug] [2026-11-10T01:18:24.324Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-10T01:18:24.460Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.461Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.461Z] [hosting] hash cache [Lm5leHQtcmVsZWFzZQ] stored for 39 files
+[debug] [2026-11-10T01:18:24.462Z] [hosting][hash queue][FINAL] {"max":131,"min":10,"avg":16.666666666666668,"active":0,"complete":39,"success":39,"errored":0,"retried":0,"total":39,"elapsed":136}
+[debug] [2026-11-10T01:18:24.462Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020:populateFiles [none]
+[debug] [2026-11-10T01:18:24.462Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020:populateFiles {"files":{"/sw.js":"1e159cc2fae933c7d18e47d61f28659b8c2342f405a86b3848a2475056d30882","/manifest.webmanifest":"f90b0e0d9a9c61cd6aeb46f53dd62e83c00c583fcb71518ab0ff93993bb9f4c9","/index.txt":"fb07a397c5239c7c5d3a0277b568a070ec9bd0f94971794d2f97614d883e3f90","/entrar.txt":"394bd4dc94c406e17e1375f85b8577c0b50835b12676908e1e7859045e37d2ae","/index.html":"eee7be6060b7e6a39a7706e73b72b77fd6330fc1187cef0c1459622e88b0ab00","/hinos.html":"5a9bf7362e4d487fa37de41c2580564f7e69f72efc474331490239006e02fcbd","/admin.txt":"a14b58a227695543bed1d6fb2de543e37341224d8b2bc3bdd05d1b145e21fae7","/hinos.txt":"15a8622e992788dcac5210ffd69ce1f0746e56d1c56b5bfa19b607a2a5a8d4cd","/entrar.html":"49ff694dd5460f0d25bd751ff5a96d69ed1561f2ea56712bc9361baf6b0a5e69","/biblia.txt":"d9470457a13695bd15290e7aa9e8c0af44ad133575bcf7ba488f305c91211ad8","/import-examples/biblia-livre-traducao.json":"8e297e5d7ce00e153ced3fd3fa64c5adb53681555ae1a78a73813adecfeb0c7a","/import-examples/biblia-livre-3-versiculos.json":"45757efcccdeec58af4f2aec1b0f7955d10168fe4fed0c1c4f5665969d455dd8","/biblia.html":"785014fc0955cc0d184638b359b0e19f1322427cfdb7cdda00e116b5ed3eb755","/admin.html":"5f2de9d57e2df7513936439180d037e3758ffdb99381d7eec6409f5334178ca9","/_next/static/chunks/webpack-b73e00219e5df86d.js":"94fea2974b26c95310dd478cd4038ec8947dc12023c9616f15b4329c5ac7f4b6","/_next/static/chunks/main-app-e95fe1c6ffe61cf9.js":"8706e0b26b2ab46743a28720d3c433057a80ba34662502119ad8cb11173f4633","/404.html":"4ca4b8318904b5b9df6a1fe801b5bbbe4a5cc66c787b4dc8819e1d36c8d0bfa4","/_next/static/css/0165c95b5142122a.css":"438921f5ae5740269384e4d2c27ac271033cabb1deaacc5e1926bc15f0648675","/_next/static/chunks/pages/_error-cb2a52f75f2162e2.js":"c795dab089f7754c12ef30c4bff9a93b1610fdd84f6611b30c2427c4310fc597","/_next/static/chunks/pages/_app-7d307437aca18ad4.js":"69019bfa0c93292c3ebabbec29f7f157eebbecc2fec618d51b28c093afd0a098","/_next/static/chunks/app/page-e0ddd3a0531b3281.js":"3a7f0af10e51061285198f8a553b44e8110d672de2679b8a5b333fd56d0829df","/_next/static/chunks/app/entrar/page-82d47ae8386e729f.js":"a37981e70c68dad229485b328f991417c8909850bcd86d710ca83502e1f4b13a","/_next/static/chunks/app/biblia/page-fc5b477dbfa6864f.js":"51f919775b1014eac65efece73ba3e5dfa514cc13df1f929b1895bc09bc45793","/_next/static/chunks/app/layout-618eb5d5b358dbdd.js":"35e1938f8db535662366250c112c85fa574a1e8ff6af24e46d2ad53ca3a1f64c","/_next/static/chunks/app/admin/page-4748a36be13e5277.js":"47ceb0ad1d802cb5ec756396abf9834128c41aaad2ce9850e561903a52d92d89","/_next/static/2nxun5nVSQKwVcN81lnVa/_ssgManifest.js":"02dbc1aeab6ef0a6ff2ff9a1643158cf9bb38929945eaa343a3627dee9ba6778","/_next/static/chunks/app/_not-found/page-079ff5abf16b04fa.js":"c018af6f86e043d2e95c120619cd0406bef95d5aa4481a669084939aff89db1f","/_next/static/2nxun5nVSQKwVcN81lnVa/_buildManifest.js":"595d3498133088a9c73c0bd1c6f163a79acf8225625325830ddfc26e093008eb","/_next/static/chunks/app/hinos/page-54453632830a3dcc.js":"f109c70b5c187d49eaabf22e4ad0980737120ce1bda608adac22a67658df6410","/_next/static/chunks/ae6eea6a-fba0135f8aac4528.js":"f34b515ed49dcb0affeb7542932d82e88150e3f93448c327d9f68ef4346b9aa1","/_next/static/chunks/polyfills-42372ed130431b0a.js":"67dee1c02c6a6700d63b5c1898cf2df618101a68a395db469192763d24925a23","/_next/static/chunks/main-2ee3df819357997f.js":"b6897e22714a28a4f0e91b9bdcdf1bdd93ab929e9f656293c627a2bccea9add7","/_next/static/chunks/477-82a3e2a129903f5b.js":"8477fb436962f68f640b9b46154e53e2257f8acb22aa29f09c9611932259ed41","/_next/static/chunks/255-15b9cc804e0d9c7d.js":"a4a8397a645592256c07ff75f2cc0d2eca9b606a834ad2566b2b94e5d3638e06","/_next/static/chunks/4bd1b696-c023c6e3521b1417.js":"df36eebef505f2540041fc65bb8d4c6f3e55585b44a95eb2d17257e51437b2ff","/_next/static/chunks/framework-28b60818f5cffd83.js":"eb58630e55e9311dbb6bad11d8a5cd264d160b16ffe2265cc1c178956f696fc4","/_next/static/chunks/bc9e92e6-3c45f03f1dfcd780.js":"493919f7d19129ed7dfd8dbc606630a8161722e09eda48bd75ce4515c6c20b99","/images/harpa-palavra-app-icon.png":"0cad76e940bee1a685515275eee6fae5f4f6463bd856c02fe24866ee08052fde","/images/biblia-livre-cover.png":"edee993ff6cab89434cb476c8f93fcd6d7ed0255893a22918262073e375e5a33"}}
+[debug] [2026-11-10T01:18:24.968Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020:populateFiles 200
+[debug] [2026-11-10T01:18:24.968Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020:populateFiles {"uploadRequiredHashes":["15a8622e992788dcac5210ffd69ce1f0746e56d1c56b5bfa19b607a2a5a8d4cd","d9470457a13695bd15290e7aa9e8c0af44ad133575bcf7ba488f305c91211ad8","49ff694dd5460f0d25bd751ff5a96d69ed1561f2ea56712bc9361baf6b0a5e69","5f2de9d57e2df7513936439180d037e3758ffdb99381d7eec6409f5334178ca9","f109c70b5c187d49eaabf22e4ad0980737120ce1bda608adac22a67658df6410","394bd4dc94c406e17e1375f85b8577c0b50835b12676908e1e7859045e37d2ae","785014fc0955cc0d184638b359b0e19f1322427cfdb7cdda00e116b5ed3eb755","4ca4b8318904b5b9df6a1fe801b5bbbe4a5cc66c787b4dc8819e1d36c8d0bfa4","a14b58a227695543bed1d6fb2de543e37341224d8b2bc3bdd05d1b145e21fae7","fb07a397c5239c7c5d3a0277b568a070ec9bd0f94971794d2f97614d883e3f90","5a9bf7362e4d487fa37de41c2580564f7e69f72efc474331490239006e02fcbd","438921f5ae5740269384e4d2c27ac271033cabb1deaacc5e1926bc15f0648675","eee7be6060b7e6a39a7706e73b72b77fd6330fc1187cef0c1459622e88b0ab00"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files"}
+[debug] [2026-11-10T01:18:24.969Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.969Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.970Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.970Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.970Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.971Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.972Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.972Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.972Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.972Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:24.973Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/15a8622e992788dcac5210ffd69ce1f0746e56d1c56b5bfa19b607a2a5a8d4cd [none]
+[debug] [2026-11-10T01:18:24.973Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/15a8622e992788dcac5210ffd69ce1f0746e56d1c56b5bfa19b607a2a5a8d4cd [stream]
+[debug] [2026-11-10T01:18:24.974Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/d9470457a13695bd15290e7aa9e8c0af44ad133575bcf7ba488f305c91211ad8 [none]
+[debug] [2026-11-10T01:18:24.974Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/d9470457a13695bd15290e7aa9e8c0af44ad133575bcf7ba488f305c91211ad8 [stream]
+[debug] [2026-11-10T01:18:24.975Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/49ff694dd5460f0d25bd751ff5a96d69ed1561f2ea56712bc9361baf6b0a5e69 [none]
+[debug] [2026-11-10T01:18:24.975Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/49ff694dd5460f0d25bd751ff5a96d69ed1561f2ea56712bc9361baf6b0a5e69 [stream]
+[debug] [2026-11-10T01:18:24.977Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5f2de9d57e2df7513936439180d037e3758ffdb99381d7eec6409f5334178ca9 [none]
+[debug] [2026-11-10T01:18:24.977Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5f2de9d57e2df7513936439180d037e3758ffdb99381d7eec6409f5334178ca9 [stream]
+[debug] [2026-11-10T01:18:24.978Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/f109c70b5c187d49eaabf22e4ad0980737120ce1bda608adac22a67658df6410 [none]
+[debug] [2026-11-10T01:18:24.978Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/f109c70b5c187d49eaabf22e4ad0980737120ce1bda608adac22a67658df6410 [stream]
+[debug] [2026-11-10T01:18:24.979Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/394bd4dc94c406e17e1375f85b8577c0b50835b12676908e1e7859045e37d2ae [none]
+[debug] [2026-11-10T01:18:24.980Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/394bd4dc94c406e17e1375f85b8577c0b50835b12676908e1e7859045e37d2ae [stream]
+[debug] [2026-11-10T01:18:24.981Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/785014fc0955cc0d184638b359b0e19f1322427cfdb7cdda00e116b5ed3eb755 [none]
+[debug] [2026-11-10T01:18:24.981Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/785014fc0955cc0d184638b359b0e19f1322427cfdb7cdda00e116b5ed3eb755 [stream]
+[debug] [2026-11-10T01:18:24.983Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/4ca4b8318904b5b9df6a1fe801b5bbbe4a5cc66c787b4dc8819e1d36c8d0bfa4 [none]
+[debug] [2026-11-10T01:18:24.983Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/4ca4b8318904b5b9df6a1fe801b5bbbe4a5cc66c787b4dc8819e1d36c8d0bfa4 [stream]
+[debug] [2026-11-10T01:18:24.984Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/a14b58a227695543bed1d6fb2de543e37341224d8b2bc3bdd05d1b145e21fae7 [none]
+[debug] [2026-11-10T01:18:24.984Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/a14b58a227695543bed1d6fb2de543e37341224d8b2bc3bdd05d1b145e21fae7 [stream]
+[debug] [2026-11-10T01:18:24.986Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/fb07a397c5239c7c5d3a0277b568a070ec9bd0f94971794d2f97614d883e3f90 [none]
+[debug] [2026-11-10T01:18:24.986Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/fb07a397c5239c7c5d3a0277b568a070ec9bd0f94971794d2f97614d883e3f90 [stream]
+[debug] [2026-11-10T01:18:24.987Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5a9bf7362e4d487fa37de41c2580564f7e69f72efc474331490239006e02fcbd [none]
+[debug] [2026-11-10T01:18:24.987Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5a9bf7362e4d487fa37de41c2580564f7e69f72efc474331490239006e02fcbd [stream]
+[debug] [2026-11-10T01:18:24.987Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/438921f5ae5740269384e4d2c27ac271033cabb1deaacc5e1926bc15f0648675 [none]
+[debug] [2026-11-10T01:18:24.988Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/438921f5ae5740269384e4d2c27ac271033cabb1deaacc5e1926bc15f0648675 [stream]
+[debug] [2026-11-10T01:18:24.988Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/eee7be6060b7e6a39a7706e73b72b77fd6330fc1187cef0c1459622e88b0ab00 [none]
+[debug] [2026-11-10T01:18:24.988Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/eee7be6060b7e6a39a7706e73b72b77fd6330fc1187cef0c1459622e88b0ab00 [stream]
+[debug] [2026-11-10T01:18:24.989Z] [hosting][populate queue][FINAL] {"max":513,"min":513,"avg":513,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":529}
+[debug] [2026-11-10T01:18:24.989Z] [hosting] uploads queued: 13
+[info] i  hosting: uploading new files [0/13] (0%) 
+[debug] [2026-11-10T01:18:26.349Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/fb07a397c5239c7c5d3a0277b568a070ec9bd0f94971794d2f97614d883e3f90 200
+[debug] [2026-11-10T01:18:26.350Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/fb07a397c5239c7c5d3a0277b568a070ec9bd0f94971794d2f97614d883e3f90 [stream]
+[debug] [2026-11-10T01:18:26.362Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/4ca4b8318904b5b9df6a1fe801b5bbbe4a5cc66c787b4dc8819e1d36c8d0bfa4 200
+[debug] [2026-11-10T01:18:26.364Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/4ca4b8318904b5b9df6a1fe801b5bbbe4a5cc66c787b4dc8819e1d36c8d0bfa4 [stream]
+[debug] [2026-11-10T01:18:26.380Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5f2de9d57e2df7513936439180d037e3758ffdb99381d7eec6409f5334178ca9 200
+[debug] [2026-11-10T01:18:26.381Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5f2de9d57e2df7513936439180d037e3758ffdb99381d7eec6409f5334178ca9 [stream]
+[debug] [2026-11-10T01:18:26.439Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/a14b58a227695543bed1d6fb2de543e37341224d8b2bc3bdd05d1b145e21fae7 200
+[debug] [2026-11-10T01:18:26.440Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/a14b58a227695543bed1d6fb2de543e37341224d8b2bc3bdd05d1b145e21fae7 [stream]
+[debug] [2026-11-10T01:18:26.462Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/eee7be6060b7e6a39a7706e73b72b77fd6330fc1187cef0c1459622e88b0ab00 200
+[debug] [2026-11-10T01:18:26.463Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/eee7be6060b7e6a39a7706e73b72b77fd6330fc1187cef0c1459622e88b0ab00 [stream]
+[debug] [2026-11-10T01:18:26.469Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/49ff694dd5460f0d25bd751ff5a96d69ed1561f2ea56712bc9361baf6b0a5e69 200
+[debug] [2026-11-10T01:18:26.469Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/49ff694dd5460f0d25bd751ff5a96d69ed1561f2ea56712bc9361baf6b0a5e69 [stream]
+[debug] [2026-11-10T01:18:26.495Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/785014fc0955cc0d184638b359b0e19f1322427cfdb7cdda00e116b5ed3eb755 200
+[debug] [2026-11-10T01:18:26.496Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/785014fc0955cc0d184638b359b0e19f1322427cfdb7cdda00e116b5ed3eb755 [stream]
+[debug] [2026-11-10T01:18:26.560Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/15a8622e992788dcac5210ffd69ce1f0746e56d1c56b5bfa19b607a2a5a8d4cd 200
+[debug] [2026-11-10T01:18:26.561Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/15a8622e992788dcac5210ffd69ce1f0746e56d1c56b5bfa19b607a2a5a8d4cd [stream]
+[debug] [2026-11-10T01:18:26.565Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/394bd4dc94c406e17e1375f85b8577c0b50835b12676908e1e7859045e37d2ae 200
+[debug] [2026-11-10T01:18:26.565Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/394bd4dc94c406e17e1375f85b8577c0b50835b12676908e1e7859045e37d2ae [stream]
+[debug] [2026-11-10T01:18:26.571Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/f109c70b5c187d49eaabf22e4ad0980737120ce1bda608adac22a67658df6410 200
+[debug] [2026-11-10T01:18:26.571Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/f109c70b5c187d49eaabf22e4ad0980737120ce1bda608adac22a67658df6410 [stream]
+[debug] [2026-11-10T01:18:26.589Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/d9470457a13695bd15290e7aa9e8c0af44ad133575bcf7ba488f305c91211ad8 200
+[debug] [2026-11-10T01:18:26.589Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/d9470457a13695bd15290e7aa9e8c0af44ad133575bcf7ba488f305c91211ad8 [stream]
+[debug] [2026-11-10T01:18:26.631Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/438921f5ae5740269384e4d2c27ac271033cabb1deaacc5e1926bc15f0648675 200
+[debug] [2026-11-10T01:18:26.631Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/438921f5ae5740269384e4d2c27ac271033cabb1deaacc5e1926bc15f0648675 [stream]
+[debug] [2026-11-10T01:18:26.798Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5a9bf7362e4d487fa37de41c2580564f7e69f72efc474331490239006e02fcbd 200
+[debug] [2026-11-10T01:18:26.799Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/b8b75cb7c82fc020/files/5a9bf7362e4d487fa37de41c2580564f7e69f72efc474331490239006e02fcbd [stream]
+[debug] [2026-11-10T01:18:26.799Z] [hosting][upload queue][FINAL] {"max":1826,"min":1378,"avg":1542.6923076923076,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":1830}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[harpa-palavra]: file upload complete 
+[debug] [2026-11-10T01:18:26.801Z] [hosting] deploy completed after 2494ms
+[debug] [2026-11-10T01:18:26.803Z] [
+  {
+    "config": {
+      "public": ".next-release",
+      "cleanUrls": true,
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            }
+          ]
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "harpa-palavra"
+    },
+    "version": "projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020"
+  }
+]
+[info] i  hosting[harpa-palavra]: finalizing version... 
+[debug] [2026-11-10T01:18:26.806Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:26.806Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:26.807Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/b8b75cb7c82fc020 updateMask=status%2Cconfig
+[debug] [2026-11-10T01:18:26.807Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/b8b75cb7c82fc020 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"**","headers":{"Cache-Control":"no-cache, no-store, must-revalidate"}}],"cleanUrls":true}}
+[debug] [2026-11-10T01:18:27.234Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/b8b75cb7c82fc020 200
+[debug] [2026-11-10T01:18:27.234Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/b8b75cb7c82fc020 {"name":"projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:18:24.143575Z","createUser":{"email":"jusanmagno@gmail.com"},"finalizeTime":"2026-11-10T01:18:27.401203Z","finalizeUser":{"email":"jusanmagno@gmail.com"}}
+[debug] [2026-11-10T01:18:27.234Z] [hosting] finalized version for harpa-palavra:[object Object]
+[info] ✔  hosting[harpa-palavra]: version finalized 
+[info] i  hosting[harpa-palavra]: releasing new version... 
+[debug] [2026-11-10T01:18:27.234Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:27.235Z] Checked if tokens are valid: true, expires at: 1794274608779
+[debug] [2026-11-10T01:18:27.235Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases versionName=projects%2F264623226795%2Fsites%2Fharpa-palavra%2Fversions%2Fb8b75cb7c82fc020
+[debug] [2026-11-10T01:18:27.235Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {}
+[debug] [2026-11-10T01:18:27.663Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases 200
+[debug] [2026-11-10T01:18:27.663Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794273507239000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:18:24.143575Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:18:27.401203Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:18:27.239Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[debug] [2026-11-10T01:18:27.664Z] [hosting] release: {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794273507239000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/b8b75cb7c82fc020","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:18:24.143575Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:18:27.401203Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:18:27.239Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[info] ✔  hosting[harpa-palavra]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/harpa-palavra/overview
+[info] Hosting URL: https://harpa-palavra.web.app
+[debug] [2026-11-10T01:26:36.954Z] ----------------------------------------------------------------------
+[debug] [2026-11-10T01:26:36.960Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase deploy --only hosting --project harpa-palavra
+[debug] [2026-11-10T01:26:36.962Z] CLI Version:   15.7.0
+[debug] [2026-11-10T01:26:36.962Z] Platform:      darwin
+[debug] [2026-11-10T01:26:36.962Z] Node Version:  v20.20.0
+[debug] [2026-11-10T01:26:36.962Z] Time:          Mon Nov 09 2026 22:26:36 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-10T01:26:36.963Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-10T01:26:37.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-10T01:26:37.987Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[debug] [2026-11-10T01:26:37.988Z] [iam] checking project harpa-palavra for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-10T01:26:37.989Z] Checked if tokens are valid: false, expires at: 1794274608779
+[debug] [2026-11-10T01:26:37.989Z] Checked if tokens are valid: false, expires at: 1794274608779
+[debug] [2026-11-10T01:26:37.989Z] > refreshing access token with scopes: []
+[debug] [2026-11-10T01:26:37.991Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-11-10T01:26:37.991Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-10T01:26:38.204Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-11-10T01:26:38.204Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-11-10T01:26:38.225Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions [none]
+[debug] [2026-11-10T01:26:38.225Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions  x-goog-user-project=harpa-palavra
+[debug] [2026-11-10T01:26:38.225Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:26:39.205Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions 200
+[debug] [2026-11-10T01:26:39.206Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:26:39.207Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:39.207Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:39.207Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra [none]
+[debug] [2026-11-10T01:26:39.683Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra 200
+[debug] [2026-11-10T01:26:39.684Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra {"projectId":"harpa-palavra","projectNumber":"264623226795","displayName":"harpa-palavra","name":"projects/harpa-palavra","resources":{"hostingSite":"harpa-palavra"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_8f6f697e-7978-478d-86c2-e5e6ea674fd5"}
+[info] 
+[info] === Deploying to 'harpa-palavra'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-10T01:26:39.687Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:39.687Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:39.687Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions [none]
+[debug] [2026-11-10T01:26:39.688Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-10T01:26:41.206Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions 200
+[debug] [2026-11-10T01:26:41.206Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"name":"projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[harpa-palavra]: beginning deploy... 
+[info] i  hosting[harpa-palavra]: found 39 files in .next-release 
+[debug] [2026-11-10T01:26:41.230Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-10T01:26:41.352Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.352Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.354Z] [hosting] hash cache [Lm5leHQtcmVsZWFzZQ] stored for 39 files
+[debug] [2026-11-10T01:26:41.354Z] [hosting][hash queue][FINAL] {"max":114,"min":9,"avg":14.692307692307692,"active":0,"complete":39,"success":39,"errored":0,"retried":0,"total":39,"elapsed":123}
+[debug] [2026-11-10T01:26:41.354Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82:populateFiles [none]
+[debug] [2026-11-10T01:26:41.355Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82:populateFiles {"files":{"/manifest.webmanifest":"f90b0e0d9a9c61cd6aeb46f53dd62e83c00c583fcb71518ab0ff93993bb9f4c9","/sw.js":"1e159cc2fae933c7d18e47d61f28659b8c2342f405a86b3848a2475056d30882","/index.txt":"f9ac3cb9ef268144c80b026996a6acc12ac194dcac770243e97730408edb885a","/hinos.txt":"7f860f7b572d3a13d5cf03e9e16696ea0efcb836ec07ab130c9588710f409487","/hinos.html":"4f47e42974f652714e2e01b79920af73ed80355261340f44f43a043f8b789002","/biblia.txt":"ea3f4455bceaef46263d0bfb3b35cb8ba02fa5476efc1a9de08b17047771ac14","/entrar.html":"cc3c54fad843f019c1a58c3c3aaed3cafced6cef29e6f560f712ea057590b40f","/index.html":"fc4bfc66de9db9b7c1503c0dff4530a4e6e81f7ffcfb17148991167be92d67c3","/entrar.txt":"bb67c37b4aa8cbba99e7969263163a4d00a9ed9fcac3d64b1141b6f5803a9d6f","/admin.txt":"b0127462bd4489dccd03d5505cca277209bb062a2cc91c90ac24daf0354945ac","/import-examples/biblia-livre-traducao.json":"8e297e5d7ce00e153ced3fd3fa64c5adb53681555ae1a78a73813adecfeb0c7a","/biblia.html":"78a2cc43b35d9b439be8ed01a33efb110671e6a55a90e17ac245a6bfe0bf7264","/_next/static/epJjE2uIkUN9t2dk4-LGh/_ssgManifest.js":"02dbc1aeab6ef0a6ff2ff9a1643158cf9bb38929945eaa343a3627dee9ba6778","/import-examples/biblia-livre-3-versiculos.json":"45757efcccdeec58af4f2aec1b0f7955d10168fe4fed0c1c4f5665969d455dd8","/_next/static/epJjE2uIkUN9t2dk4-LGh/_buildManifest.js":"595d3498133088a9c73c0bd1c6f163a79acf8225625325830ddfc26e093008eb","/admin.html":"6f5e6ccde86db0455546a1db21f7ed8e2eae2756aadd94f55535e331cb272c73","/404.html":"0655a2148389efa79940a63c053384bd7ee29725441ced36d8bb9a7b06345551","/_next/static/chunks/webpack-b73e00219e5df86d.js":"94fea2974b26c95310dd478cd4038ec8947dc12023c9616f15b4329c5ac7f4b6","/_next/static/chunks/main-app-e95fe1c6ffe61cf9.js":"8706e0b26b2ab46743a28720d3c433057a80ba34662502119ad8cb11173f4633","/_next/static/css/0fd1727694503d3a.css":"40421924091092d4262483b5306a68ea5a1a1c75fe81998b4dde978722734b2c","/_next/static/chunks/app/page-e0ddd3a0531b3281.js":"3a7f0af10e51061285198f8a553b44e8110d672de2679b8a5b333fd56d0829df","/_next/static/chunks/pages/_app-7d307437aca18ad4.js":"69019bfa0c93292c3ebabbec29f7f157eebbecc2fec618d51b28c093afd0a098","/_next/static/chunks/pages/_error-cb2a52f75f2162e2.js":"c795dab089f7754c12ef30c4bff9a93b1610fdd84f6611b30c2427c4310fc597","/_next/static/chunks/app/layout-618eb5d5b358dbdd.js":"35e1938f8db535662366250c112c85fa574a1e8ff6af24e46d2ad53ca3a1f64c","/_next/static/chunks/app/hinos/page-e75eacc9de49f2b3.js":"6a5a3df40279622878c838b4f5fb26b3d4d75a8001d661a1dd2bc82bf82398be","/_next/static/chunks/app/entrar/page-82d47ae8386e729f.js":"a37981e70c68dad229485b328f991417c8909850bcd86d710ca83502e1f4b13a","/_next/static/chunks/app/admin/page-4748a36be13e5277.js":"47ceb0ad1d802cb5ec756396abf9834128c41aaad2ce9850e561903a52d92d89","/_next/static/chunks/app/_not-found/page-079ff5abf16b04fa.js":"c018af6f86e043d2e95c120619cd0406bef95d5aa4481a669084939aff89db1f","/_next/static/chunks/app/biblia/page-fc5b477dbfa6864f.js":"51f919775b1014eac65efece73ba3e5dfa514cc13df1f929b1895bc09bc45793","/_next/static/chunks/ae6eea6a-fba0135f8aac4528.js":"f34b515ed49dcb0affeb7542932d82e88150e3f93448c327d9f68ef4346b9aa1","/_next/static/chunks/main-2ee3df819357997f.js":"b6897e22714a28a4f0e91b9bdcdf1bdd93ab929e9f656293c627a2bccea9add7","/_next/static/chunks/polyfills-42372ed130431b0a.js":"67dee1c02c6a6700d63b5c1898cf2df618101a68a395db469192763d24925a23","/_next/static/chunks/477-82a3e2a129903f5b.js":"8477fb436962f68f640b9b46154e53e2257f8acb22aa29f09c9611932259ed41","/_next/static/chunks/255-15b9cc804e0d9c7d.js":"a4a8397a645592256c07ff75f2cc0d2eca9b606a834ad2566b2b94e5d3638e06","/_next/static/chunks/4bd1b696-c023c6e3521b1417.js":"df36eebef505f2540041fc65bb8d4c6f3e55585b44a95eb2d17257e51437b2ff","/_next/static/chunks/framework-28b60818f5cffd83.js":"eb58630e55e9311dbb6bad11d8a5cd264d160b16ffe2265cc1c178956f696fc4","/_next/static/chunks/bc9e92e6-3c45f03f1dfcd780.js":"493919f7d19129ed7dfd8dbc606630a8161722e09eda48bd75ce4515c6c20b99","/images/harpa-palavra-app-icon.png":"0cad76e940bee1a685515275eee6fae5f4f6463bd856c02fe24866ee08052fde","/images/biblia-livre-cover.png":"edee993ff6cab89434cb476c8f93fcd6d7ed0255893a22918262073e375e5a33"}}
+[debug] [2026-11-10T01:26:41.861Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82:populateFiles 200
+[debug] [2026-11-10T01:26:41.862Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82:populateFiles {"uploadRequiredHashes":["0655a2148389efa79940a63c053384bd7ee29725441ced36d8bb9a7b06345551","4f47e42974f652714e2e01b79920af73ed80355261340f44f43a043f8b789002","ea3f4455bceaef46263d0bfb3b35cb8ba02fa5476efc1a9de08b17047771ac14","78a2cc43b35d9b439be8ed01a33efb110671e6a55a90e17ac245a6bfe0bf7264","fc4bfc66de9db9b7c1503c0dff4530a4e6e81f7ffcfb17148991167be92d67c3","cc3c54fad843f019c1a58c3c3aaed3cafced6cef29e6f560f712ea057590b40f","f9ac3cb9ef268144c80b026996a6acc12ac194dcac770243e97730408edb885a","6a5a3df40279622878c838b4f5fb26b3d4d75a8001d661a1dd2bc82bf82398be","7f860f7b572d3a13d5cf03e9e16696ea0efcb836ec07ab130c9588710f409487","b0127462bd4489dccd03d5505cca277209bb062a2cc91c90ac24daf0354945ac","40421924091092d4262483b5306a68ea5a1a1c75fe81998b4dde978722734b2c","6f5e6ccde86db0455546a1db21f7ed8e2eae2756aadd94f55535e331cb272c73","bb67c37b4aa8cbba99e7969263163a4d00a9ed9fcac3d64b1141b6f5803a9d6f"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files"}
+[debug] [2026-11-10T01:26:41.863Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.863Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.863Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.864Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.865Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.866Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.866Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.866Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.866Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.867Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.867Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.867Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.868Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.868Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.869Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.869Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.869Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:41.869Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/0655a2148389efa79940a63c053384bd7ee29725441ced36d8bb9a7b06345551 [none]
+[debug] [2026-11-10T01:26:41.869Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/0655a2148389efa79940a63c053384bd7ee29725441ced36d8bb9a7b06345551 [stream]
+[debug] [2026-11-10T01:26:41.872Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/4f47e42974f652714e2e01b79920af73ed80355261340f44f43a043f8b789002 [none]
+[debug] [2026-11-10T01:26:41.872Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/4f47e42974f652714e2e01b79920af73ed80355261340f44f43a043f8b789002 [stream]
+[debug] [2026-11-10T01:26:41.873Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/ea3f4455bceaef46263d0bfb3b35cb8ba02fa5476efc1a9de08b17047771ac14 [none]
+[debug] [2026-11-10T01:26:41.873Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/ea3f4455bceaef46263d0bfb3b35cb8ba02fa5476efc1a9de08b17047771ac14 [stream]
+[debug] [2026-11-10T01:26:41.874Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/78a2cc43b35d9b439be8ed01a33efb110671e6a55a90e17ac245a6bfe0bf7264 [none]
+[debug] [2026-11-10T01:26:41.874Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/78a2cc43b35d9b439be8ed01a33efb110671e6a55a90e17ac245a6bfe0bf7264 [stream]
+[debug] [2026-11-10T01:26:41.876Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/fc4bfc66de9db9b7c1503c0dff4530a4e6e81f7ffcfb17148991167be92d67c3 [none]
+[debug] [2026-11-10T01:26:41.876Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/fc4bfc66de9db9b7c1503c0dff4530a4e6e81f7ffcfb17148991167be92d67c3 [stream]
+[debug] [2026-11-10T01:26:41.877Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/cc3c54fad843f019c1a58c3c3aaed3cafced6cef29e6f560f712ea057590b40f [none]
+[debug] [2026-11-10T01:26:41.877Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/cc3c54fad843f019c1a58c3c3aaed3cafced6cef29e6f560f712ea057590b40f [stream]
+[debug] [2026-11-10T01:26:41.878Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/f9ac3cb9ef268144c80b026996a6acc12ac194dcac770243e97730408edb885a [none]
+[debug] [2026-11-10T01:26:41.878Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/f9ac3cb9ef268144c80b026996a6acc12ac194dcac770243e97730408edb885a [stream]
+[debug] [2026-11-10T01:26:41.880Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6a5a3df40279622878c838b4f5fb26b3d4d75a8001d661a1dd2bc82bf82398be [none]
+[debug] [2026-11-10T01:26:41.880Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6a5a3df40279622878c838b4f5fb26b3d4d75a8001d661a1dd2bc82bf82398be [stream]
+[debug] [2026-11-10T01:26:41.881Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/7f860f7b572d3a13d5cf03e9e16696ea0efcb836ec07ab130c9588710f409487 [none]
+[debug] [2026-11-10T01:26:41.881Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/7f860f7b572d3a13d5cf03e9e16696ea0efcb836ec07ab130c9588710f409487 [stream]
+[debug] [2026-11-10T01:26:41.882Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/b0127462bd4489dccd03d5505cca277209bb062a2cc91c90ac24daf0354945ac [none]
+[debug] [2026-11-10T01:26:41.883Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/b0127462bd4489dccd03d5505cca277209bb062a2cc91c90ac24daf0354945ac [stream]
+[debug] [2026-11-10T01:26:41.884Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/40421924091092d4262483b5306a68ea5a1a1c75fe81998b4dde978722734b2c [none]
+[debug] [2026-11-10T01:26:41.884Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/40421924091092d4262483b5306a68ea5a1a1c75fe81998b4dde978722734b2c [stream]
+[debug] [2026-11-10T01:26:41.885Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6f5e6ccde86db0455546a1db21f7ed8e2eae2756aadd94f55535e331cb272c73 [none]
+[debug] [2026-11-10T01:26:41.885Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6f5e6ccde86db0455546a1db21f7ed8e2eae2756aadd94f55535e331cb272c73 [stream]
+[debug] [2026-11-10T01:26:41.886Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/bb67c37b4aa8cbba99e7969263163a4d00a9ed9fcac3d64b1141b6f5803a9d6f [none]
+[debug] [2026-11-10T01:26:41.886Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/bb67c37b4aa8cbba99e7969263163a4d00a9ed9fcac3d64b1141b6f5803a9d6f [stream]
+[debug] [2026-11-10T01:26:41.887Z] [hosting][populate queue][FINAL] {"max":517,"min":517,"avg":517,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":535}
+[debug] [2026-11-10T01:26:41.887Z] [hosting] uploads queued: 13
+[debug] [2026-11-10T01:26:43.209Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/78a2cc43b35d9b439be8ed01a33efb110671e6a55a90e17ac245a6bfe0bf7264 200
+[debug] [2026-11-10T01:26:43.210Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/78a2cc43b35d9b439be8ed01a33efb110671e6a55a90e17ac245a6bfe0bf7264 [stream]
+[debug] [2026-11-10T01:26:43.229Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/b0127462bd4489dccd03d5505cca277209bb062a2cc91c90ac24daf0354945ac 200
+[debug] [2026-11-10T01:26:43.229Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/b0127462bd4489dccd03d5505cca277209bb062a2cc91c90ac24daf0354945ac [stream]
+[debug] [2026-11-10T01:26:43.231Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/0655a2148389efa79940a63c053384bd7ee29725441ced36d8bb9a7b06345551 200
+[debug] [2026-11-10T01:26:43.231Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/0655a2148389efa79940a63c053384bd7ee29725441ced36d8bb9a7b06345551 [stream]
+[info] i  hosting: uploading new files [3/13] (23%) 
+[debug] [2026-11-10T01:26:43.232Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/40421924091092d4262483b5306a68ea5a1a1c75fe81998b4dde978722734b2c 200
+[debug] [2026-11-10T01:26:43.232Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/40421924091092d4262483b5306a68ea5a1a1c75fe81998b4dde978722734b2c [stream]
+[debug] [2026-11-10T01:26:43.237Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/4f47e42974f652714e2e01b79920af73ed80355261340f44f43a043f8b789002 200
+[debug] [2026-11-10T01:26:43.237Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/4f47e42974f652714e2e01b79920af73ed80355261340f44f43a043f8b789002 [stream]
+[debug] [2026-11-10T01:26:43.253Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/bb67c37b4aa8cbba99e7969263163a4d00a9ed9fcac3d64b1141b6f5803a9d6f 200
+[debug] [2026-11-10T01:26:43.253Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/bb67c37b4aa8cbba99e7969263163a4d00a9ed9fcac3d64b1141b6f5803a9d6f [stream]
+[debug] [2026-11-10T01:26:43.258Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6f5e6ccde86db0455546a1db21f7ed8e2eae2756aadd94f55535e331cb272c73 200
+[debug] [2026-11-10T01:26:43.258Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6f5e6ccde86db0455546a1db21f7ed8e2eae2756aadd94f55535e331cb272c73 [stream]
+[debug] [2026-11-10T01:26:43.259Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/cc3c54fad843f019c1a58c3c3aaed3cafced6cef29e6f560f712ea057590b40f 200
+[debug] [2026-11-10T01:26:43.259Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/cc3c54fad843f019c1a58c3c3aaed3cafced6cef29e6f560f712ea057590b40f [stream]
+[debug] [2026-11-10T01:26:43.297Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6a5a3df40279622878c838b4f5fb26b3d4d75a8001d661a1dd2bc82bf82398be 200
+[debug] [2026-11-10T01:26:43.297Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/6a5a3df40279622878c838b4f5fb26b3d4d75a8001d661a1dd2bc82bf82398be [stream]
+[debug] [2026-11-10T01:26:43.298Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/ea3f4455bceaef46263d0bfb3b35cb8ba02fa5476efc1a9de08b17047771ac14 200
+[debug] [2026-11-10T01:26:43.298Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/ea3f4455bceaef46263d0bfb3b35cb8ba02fa5476efc1a9de08b17047771ac14 [stream]
+[debug] [2026-11-10T01:26:43.298Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/7f860f7b572d3a13d5cf03e9e16696ea0efcb836ec07ab130c9588710f409487 200
+[debug] [2026-11-10T01:26:43.298Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/7f860f7b572d3a13d5cf03e9e16696ea0efcb836ec07ab130c9588710f409487 [stream]
+[debug] [2026-11-10T01:26:43.376Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/f9ac3cb9ef268144c80b026996a6acc12ac194dcac770243e97730408edb885a 200
+[debug] [2026-11-10T01:26:43.376Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/f9ac3cb9ef268144c80b026996a6acc12ac194dcac770243e97730408edb885a [stream]
+[debug] [2026-11-10T01:26:43.390Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/fc4bfc66de9db9b7c1503c0dff4530a4e6e81f7ffcfb17148991167be92d67c3 200
+[debug] [2026-11-10T01:26:43.390Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/177b4201c4cb8d82/files/fc4bfc66de9db9b7c1503c0dff4530a4e6e81f7ffcfb17148991167be92d67c3 [stream]
+[debug] [2026-11-10T01:26:43.390Z] [hosting][upload queue][FINAL] {"max":1525,"min":1345,"avg":1409.076923076923,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":1528}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[harpa-palavra]: file upload complete 
+[debug] [2026-11-10T01:26:43.391Z] [hosting] deploy completed after 2181ms
+[debug] [2026-11-10T01:26:43.391Z] [
+  {
+    "config": {
+      "public": ".next-release",
+      "cleanUrls": true,
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            }
+          ]
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "harpa-palavra"
+    },
+    "version": "projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82"
+  }
+]
+[info] i  hosting[harpa-palavra]: finalizing version... 
+[debug] [2026-11-10T01:26:43.392Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:43.392Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:43.393Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/177b4201c4cb8d82 updateMask=status%2Cconfig
+[debug] [2026-11-10T01:26:43.393Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/177b4201c4cb8d82 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"**","headers":{"Cache-Control":"no-cache, no-store, must-revalidate"}}],"cleanUrls":true}}
+[debug] [2026-11-10T01:26:43.794Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/177b4201c4cb8d82 200
+[debug] [2026-11-10T01:26:43.794Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/177b4201c4cb8d82 {"name":"projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:26:41.089356Z","createUser":{"email":"jusanmagno@gmail.com"},"finalizeTime":"2026-11-10T01:26:43.975531Z","finalizeUser":{"email":"jusanmagno@gmail.com"}}
+[debug] [2026-11-10T01:26:43.794Z] [hosting] finalized version for harpa-palavra:[object Object]
+[info] ✔  hosting[harpa-palavra]: version finalized 
+[info] i  hosting[harpa-palavra]: releasing new version... 
+[debug] [2026-11-10T01:26:43.795Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:43.795Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:26:43.795Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases versionName=projects%2F264623226795%2Fsites%2Fharpa-palavra%2Fversions%2F177b4201c4cb8d82
+[debug] [2026-11-10T01:26:43.796Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {}
+[debug] [2026-11-10T01:26:44.312Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases 200
+[debug] [2026-11-10T01:26:44.312Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794274003879000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:26:41.089356Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:26:43.975531Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:26:43.879Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[debug] [2026-11-10T01:26:44.313Z] [hosting] release: {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794274003879000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/177b4201c4cb8d82","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:26:41.089356Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:26:43.975531Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:26:43.879Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[info] ✔  hosting[harpa-palavra]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/harpa-palavra/overview
+[info] Hosting URL: https://harpa-palavra.web.app
+[debug] [2026-11-10T01:27:45.826Z] ----------------------------------------------------------------------
+[debug] [2026-11-10T01:27:45.828Z] Command:       /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/node /Users/jusanmagno/.nvm/versions/node/v20.20.0/bin/firebase deploy --only hosting --project harpa-palavra
+[debug] [2026-11-10T01:27:45.828Z] CLI Version:   15.7.0
+[debug] [2026-11-10T01:27:45.829Z] Platform:      darwin
+[debug] [2026-11-10T01:27:45.829Z] Node Version:  v20.20.0
+[debug] [2026-11-10T01:27:45.829Z] Time:          Mon Nov 09 2026 22:27:45 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-11-10T01:27:45.829Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-11-10T01:27:46.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-11-10T01:27:46.888Z] > authorizing via signed-in user (jusanmagno@gmail.com)
+[debug] [2026-11-10T01:27:46.889Z] [iam] checking project harpa-palavra for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-11-10T01:27:46.889Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:46.889Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:46.890Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions [none]
+[debug] [2026-11-10T01:27:46.890Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions  x-goog-user-project=harpa-palavra
+[debug] [2026-11-10T01:27:46.890Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:27:47.206Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions 200
+[debug] [2026-11-10T01:27:47.207Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/harpa-palavra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-11-10T01:27:47.208Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:47.208Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:47.208Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra [none]
+[debug] [2026-11-10T01:27:47.667Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra 200
+[debug] [2026-11-10T01:27:47.667Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/harpa-palavra {"projectId":"harpa-palavra","projectNumber":"264623226795","displayName":"harpa-palavra","name":"projects/harpa-palavra","resources":{"hostingSite":"harpa-palavra"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_8f6f697e-7978-478d-86c2-e5e6ea674fd5"}
+[info] 
+[info] === Deploying to 'harpa-palavra'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-11-10T01:27:47.675Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:47.675Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:47.675Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions [none]
+[debug] [2026-11-10T01:27:47.675Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-11-10T01:27:49.077Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions 200
+[debug] [2026-11-10T01:27:49.077Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions {"name":"projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[harpa-palavra]: beginning deploy... 
+[info] i  hosting[harpa-palavra]: found 39 files in .next-release 
+[debug] [2026-11-10T01:27:49.100Z] [hosting] uploading with 200 concurrency
+[debug] [2026-11-10T01:27:49.218Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.218Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.219Z] [hosting] hash cache [Lm5leHQtcmVsZWFzZQ] stored for 39 files
+[debug] [2026-11-10T01:27:49.219Z] [hosting][hash queue][FINAL] {"max":113,"min":9,"avg":15,"active":0,"complete":39,"success":39,"errored":0,"retried":0,"total":39,"elapsed":118}
+[debug] [2026-11-10T01:27:49.220Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4:populateFiles [none]
+[debug] [2026-11-10T01:27:49.220Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4:populateFiles {"files":{"/sw.js":"1e159cc2fae933c7d18e47d61f28659b8c2342f405a86b3848a2475056d30882","/manifest.webmanifest":"f90b0e0d9a9c61cd6aeb46f53dd62e83c00c583fcb71518ab0ff93993bb9f4c9","/hinos.txt":"bd3a593d63ab5c6280dbffe269ebe9143b88d87d0a862f9c80ec3d56b86b986a","/index.txt":"85fae8f96e4d29d3ae9aceaafb9e366afbfdc851f06ee84151fdfab1a2c73762","/hinos.html":"68cfca2cc2c07d03c1c5212c80a7c72ddbd13858aafdd1a2914e1990277bc9a0","/entrar.txt":"9019e7ec843c5ea60be4fc57e2d71107d8a0d194f91cf4f528a4a6af14354171","/index.html":"7104785386ac1bb725ee53ed5355f42caf8b44a50fb34fb87dd8f2ba50d57e24","/entrar.html":"ed781abb2a3dc3d65547ecc643ebfcb7e103f270954ee63a7204d062513e5d6a","/biblia.txt":"90f80c92ab43225a94e74e15a3f2e0a486fe7fa77bda921aacc003292208199b","/biblia.html":"22968b1530524a2d8028bab2831c6b74e7b5d23b5c887b1d176b871b069959f2","/admin.txt":"2ca920dae59df92bff832a03c8ae124f1afad95951be0ba75f88733261d465b1","/import-examples/biblia-livre-traducao.json":"8e297e5d7ce00e153ced3fd3fa64c5adb53681555ae1a78a73813adecfeb0c7a","/import-examples/biblia-livre-3-versiculos.json":"45757efcccdeec58af4f2aec1b0f7955d10168fe4fed0c1c4f5665969d455dd8","/admin.html":"ace62116d105ecb8f1541241f5476e85a562bd820128fbfd96fcfc89a13e6ffe","/404.html":"217732913a8f297258b36728cfd89599b6d92dd0dab249fdae9304c092709dc0","/_next/static/css/02bab5f95e6f349a.css":"cda4fcb95eeeb417db248db59dfb737e9f5a887d8203f11d43533bf906e5ceda","/_next/static/chunks/main-app-e95fe1c6ffe61cf9.js":"8706e0b26b2ab46743a28720d3c433057a80ba34662502119ad8cb11173f4633","/_next/static/chunks/webpack-b73e00219e5df86d.js":"94fea2974b26c95310dd478cd4038ec8947dc12023c9616f15b4329c5ac7f4b6","/_next/static/chunks/pages/_error-cb2a52f75f2162e2.js":"c795dab089f7754c12ef30c4bff9a93b1610fdd84f6611b30c2427c4310fc597","/_next/static/chunks/pages/_app-7d307437aca18ad4.js":"69019bfa0c93292c3ebabbec29f7f157eebbecc2fec618d51b28c093afd0a098","/_next/static/chunks/app/page-e0ddd3a0531b3281.js":"3a7f0af10e51061285198f8a553b44e8110d672de2679b8a5b333fd56d0829df","/_next/static/chunks/app/layout-618eb5d5b358dbdd.js":"35e1938f8db535662366250c112c85fa574a1e8ff6af24e46d2ad53ca3a1f64c","/_next/static/chunks/app/hinos/page-911fe58e3e35ee9b.js":"59777ffb3b9ebcefc8a4cfa608454a847ba468c1b83b2caa05cd0313ab486404","/_next/static/chunks/app/biblia/page-fc5b477dbfa6864f.js":"51f919775b1014eac65efece73ba3e5dfa514cc13df1f929b1895bc09bc45793","/_next/static/AKP7wIMy46iz5SQfATEH3/_ssgManifest.js":"02dbc1aeab6ef0a6ff2ff9a1643158cf9bb38929945eaa343a3627dee9ba6778","/_next/static/AKP7wIMy46iz5SQfATEH3/_buildManifest.js":"595d3498133088a9c73c0bd1c6f163a79acf8225625325830ddfc26e093008eb","/_next/static/chunks/app/entrar/page-82d47ae8386e729f.js":"a37981e70c68dad229485b328f991417c8909850bcd86d710ca83502e1f4b13a","/_next/static/chunks/app/_not-found/page-079ff5abf16b04fa.js":"c018af6f86e043d2e95c120619cd0406bef95d5aa4481a669084939aff89db1f","/_next/static/chunks/app/admin/page-4748a36be13e5277.js":"47ceb0ad1d802cb5ec756396abf9834128c41aaad2ce9850e561903a52d92d89","/_next/static/chunks/ae6eea6a-fba0135f8aac4528.js":"f34b515ed49dcb0affeb7542932d82e88150e3f93448c327d9f68ef4346b9aa1","/_next/static/chunks/main-2ee3df819357997f.js":"b6897e22714a28a4f0e91b9bdcdf1bdd93ab929e9f656293c627a2bccea9add7","/_next/static/chunks/polyfills-42372ed130431b0a.js":"67dee1c02c6a6700d63b5c1898cf2df618101a68a395db469192763d24925a23","/_next/static/chunks/477-82a3e2a129903f5b.js":"8477fb436962f68f640b9b46154e53e2257f8acb22aa29f09c9611932259ed41","/_next/static/chunks/255-15b9cc804e0d9c7d.js":"a4a8397a645592256c07ff75f2cc0d2eca9b606a834ad2566b2b94e5d3638e06","/_next/static/chunks/4bd1b696-c023c6e3521b1417.js":"df36eebef505f2540041fc65bb8d4c6f3e55585b44a95eb2d17257e51437b2ff","/_next/static/chunks/framework-28b60818f5cffd83.js":"eb58630e55e9311dbb6bad11d8a5cd264d160b16ffe2265cc1c178956f696fc4","/_next/static/chunks/bc9e92e6-3c45f03f1dfcd780.js":"493919f7d19129ed7dfd8dbc606630a8161722e09eda48bd75ce4515c6c20b99","/images/harpa-palavra-app-icon.png":"0cad76e940bee1a685515275eee6fae5f4f6463bd856c02fe24866ee08052fde","/images/biblia-livre-cover.png":"edee993ff6cab89434cb476c8f93fcd6d7ed0255893a22918262073e375e5a33"}}
+[debug] [2026-11-10T01:27:49.740Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4:populateFiles 200
+[debug] [2026-11-10T01:27:49.740Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4:populateFiles {"uploadRequiredHashes":["85fae8f96e4d29d3ae9aceaafb9e366afbfdc851f06ee84151fdfab1a2c73762","9019e7ec843c5ea60be4fc57e2d71107d8a0d194f91cf4f528a4a6af14354171","cda4fcb95eeeb417db248db59dfb737e9f5a887d8203f11d43533bf906e5ceda","68cfca2cc2c07d03c1c5212c80a7c72ddbd13858aafdd1a2914e1990277bc9a0","59777ffb3b9ebcefc8a4cfa608454a847ba468c1b83b2caa05cd0313ab486404","90f80c92ab43225a94e74e15a3f2e0a486fe7fa77bda921aacc003292208199b","2ca920dae59df92bff832a03c8ae124f1afad95951be0ba75f88733261d465b1","217732913a8f297258b36728cfd89599b6d92dd0dab249fdae9304c092709dc0","ed781abb2a3dc3d65547ecc643ebfcb7e103f270954ee63a7204d062513e5d6a","bd3a593d63ab5c6280dbffe269ebe9143b88d87d0a862f9c80ec3d56b86b986a","7104785386ac1bb725ee53ed5355f42caf8b44a50fb34fb87dd8f2ba50d57e24","ace62116d105ecb8f1541241f5476e85a562bd820128fbfd96fcfc89a13e6ffe","22968b1530524a2d8028bab2831c6b74e7b5d23b5c887b1d176b871b069959f2"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files"}
+[debug] [2026-11-10T01:27:49.740Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.741Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.742Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.743Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.743Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.743Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:49.743Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/85fae8f96e4d29d3ae9aceaafb9e366afbfdc851f06ee84151fdfab1a2c73762 [none]
+[debug] [2026-11-10T01:27:49.743Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/85fae8f96e4d29d3ae9aceaafb9e366afbfdc851f06ee84151fdfab1a2c73762 [stream]
+[debug] [2026-11-10T01:27:49.744Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/9019e7ec843c5ea60be4fc57e2d71107d8a0d194f91cf4f528a4a6af14354171 [none]
+[debug] [2026-11-10T01:27:49.744Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/9019e7ec843c5ea60be4fc57e2d71107d8a0d194f91cf4f528a4a6af14354171 [stream]
+[debug] [2026-11-10T01:27:49.745Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/cda4fcb95eeeb417db248db59dfb737e9f5a887d8203f11d43533bf906e5ceda [none]
+[debug] [2026-11-10T01:27:49.745Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/cda4fcb95eeeb417db248db59dfb737e9f5a887d8203f11d43533bf906e5ceda [stream]
+[debug] [2026-11-10T01:27:49.746Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/68cfca2cc2c07d03c1c5212c80a7c72ddbd13858aafdd1a2914e1990277bc9a0 [none]
+[debug] [2026-11-10T01:27:49.746Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/68cfca2cc2c07d03c1c5212c80a7c72ddbd13858aafdd1a2914e1990277bc9a0 [stream]
+[debug] [2026-11-10T01:27:49.746Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/59777ffb3b9ebcefc8a4cfa608454a847ba468c1b83b2caa05cd0313ab486404 [none]
+[debug] [2026-11-10T01:27:49.746Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/59777ffb3b9ebcefc8a4cfa608454a847ba468c1b83b2caa05cd0313ab486404 [stream]
+[debug] [2026-11-10T01:27:49.747Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/90f80c92ab43225a94e74e15a3f2e0a486fe7fa77bda921aacc003292208199b [none]
+[debug] [2026-11-10T01:27:49.747Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/90f80c92ab43225a94e74e15a3f2e0a486fe7fa77bda921aacc003292208199b [stream]
+[debug] [2026-11-10T01:27:49.748Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/2ca920dae59df92bff832a03c8ae124f1afad95951be0ba75f88733261d465b1 [none]
+[debug] [2026-11-10T01:27:49.748Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/2ca920dae59df92bff832a03c8ae124f1afad95951be0ba75f88733261d465b1 [stream]
+[debug] [2026-11-10T01:27:49.749Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/217732913a8f297258b36728cfd89599b6d92dd0dab249fdae9304c092709dc0 [none]
+[debug] [2026-11-10T01:27:49.749Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/217732913a8f297258b36728cfd89599b6d92dd0dab249fdae9304c092709dc0 [stream]
+[debug] [2026-11-10T01:27:49.749Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ed781abb2a3dc3d65547ecc643ebfcb7e103f270954ee63a7204d062513e5d6a [none]
+[debug] [2026-11-10T01:27:49.749Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ed781abb2a3dc3d65547ecc643ebfcb7e103f270954ee63a7204d062513e5d6a [stream]
+[debug] [2026-11-10T01:27:49.750Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/bd3a593d63ab5c6280dbffe269ebe9143b88d87d0a862f9c80ec3d56b86b986a [none]
+[debug] [2026-11-10T01:27:49.750Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/bd3a593d63ab5c6280dbffe269ebe9143b88d87d0a862f9c80ec3d56b86b986a [stream]
+[debug] [2026-11-10T01:27:49.751Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/7104785386ac1bb725ee53ed5355f42caf8b44a50fb34fb87dd8f2ba50d57e24 [none]
+[debug] [2026-11-10T01:27:49.751Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/7104785386ac1bb725ee53ed5355f42caf8b44a50fb34fb87dd8f2ba50d57e24 [stream]
+[debug] [2026-11-10T01:27:49.752Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ace62116d105ecb8f1541241f5476e85a562bd820128fbfd96fcfc89a13e6ffe [none]
+[debug] [2026-11-10T01:27:49.752Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ace62116d105ecb8f1541241f5476e85a562bd820128fbfd96fcfc89a13e6ffe [stream]
+[debug] [2026-11-10T01:27:49.752Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/22968b1530524a2d8028bab2831c6b74e7b5d23b5c887b1d176b871b069959f2 [none]
+[debug] [2026-11-10T01:27:49.752Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/22968b1530524a2d8028bab2831c6b74e7b5d23b5c887b1d176b871b069959f2 [stream]
+[debug] [2026-11-10T01:27:49.753Z] [hosting][populate queue][FINAL] {"max":525,"min":525,"avg":525,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":535}
+[debug] [2026-11-10T01:27:49.753Z] [hosting] uploads queued: 13
+[debug] [2026-11-10T01:27:51.010Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/22968b1530524a2d8028bab2831c6b74e7b5d23b5c887b1d176b871b069959f2 200
+[debug] [2026-11-10T01:27:51.012Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/22968b1530524a2d8028bab2831c6b74e7b5d23b5c887b1d176b871b069959f2 [stream]
+[debug] [2026-11-10T01:27:51.013Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/68cfca2cc2c07d03c1c5212c80a7c72ddbd13858aafdd1a2914e1990277bc9a0 200
+[debug] [2026-11-10T01:27:51.013Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/68cfca2cc2c07d03c1c5212c80a7c72ddbd13858aafdd1a2914e1990277bc9a0 [stream]
+[debug] [2026-11-10T01:27:51.017Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/59777ffb3b9ebcefc8a4cfa608454a847ba468c1b83b2caa05cd0313ab486404 200
+[debug] [2026-11-10T01:27:51.017Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/59777ffb3b9ebcefc8a4cfa608454a847ba468c1b83b2caa05cd0313ab486404 [stream]
+[debug] [2026-11-10T01:27:51.020Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ed781abb2a3dc3d65547ecc643ebfcb7e103f270954ee63a7204d062513e5d6a 200
+[debug] [2026-11-10T01:27:51.020Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ed781abb2a3dc3d65547ecc643ebfcb7e103f270954ee63a7204d062513e5d6a [stream]
+[debug] [2026-11-10T01:27:51.022Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/2ca920dae59df92bff832a03c8ae124f1afad95951be0ba75f88733261d465b1 200
+[debug] [2026-11-10T01:27:51.022Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/2ca920dae59df92bff832a03c8ae124f1afad95951be0ba75f88733261d465b1 [stream]
+[debug] [2026-11-10T01:27:51.044Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/bd3a593d63ab5c6280dbffe269ebe9143b88d87d0a862f9c80ec3d56b86b986a 200
+[debug] [2026-11-10T01:27:51.044Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/bd3a593d63ab5c6280dbffe269ebe9143b88d87d0a862f9c80ec3d56b86b986a [stream]
+[debug] [2026-11-10T01:27:51.055Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/85fae8f96e4d29d3ae9aceaafb9e366afbfdc851f06ee84151fdfab1a2c73762 200
+[debug] [2026-11-10T01:27:51.055Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/85fae8f96e4d29d3ae9aceaafb9e366afbfdc851f06ee84151fdfab1a2c73762 [stream]
+[debug] [2026-11-10T01:27:51.077Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/7104785386ac1bb725ee53ed5355f42caf8b44a50fb34fb87dd8f2ba50d57e24 200
+[debug] [2026-11-10T01:27:51.077Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/7104785386ac1bb725ee53ed5355f42caf8b44a50fb34fb87dd8f2ba50d57e24 [stream]
+[info] i  hosting: uploading new files [8/13] (61%) 
+[debug] [2026-11-10T01:27:51.120Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/cda4fcb95eeeb417db248db59dfb737e9f5a887d8203f11d43533bf906e5ceda 200
+[debug] [2026-11-10T01:27:51.120Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/cda4fcb95eeeb417db248db59dfb737e9f5a887d8203f11d43533bf906e5ceda [stream]
+[debug] [2026-11-10T01:27:51.125Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/9019e7ec843c5ea60be4fc57e2d71107d8a0d194f91cf4f528a4a6af14354171 200
+[debug] [2026-11-10T01:27:51.125Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/9019e7ec843c5ea60be4fc57e2d71107d8a0d194f91cf4f528a4a6af14354171 [stream]
+[debug] [2026-11-10T01:27:51.125Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ace62116d105ecb8f1541241f5476e85a562bd820128fbfd96fcfc89a13e6ffe 200
+[debug] [2026-11-10T01:27:51.126Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/ace62116d105ecb8f1541241f5476e85a562bd820128fbfd96fcfc89a13e6ffe [stream]
+[debug] [2026-11-10T01:27:51.267Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/90f80c92ab43225a94e74e15a3f2e0a486fe7fa77bda921aacc003292208199b 200
+[debug] [2026-11-10T01:27:51.267Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/90f80c92ab43225a94e74e15a3f2e0a486fe7fa77bda921aacc003292208199b [stream]
+[debug] [2026-11-10T01:27:51.563Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/217732913a8f297258b36728cfd89599b6d92dd0dab249fdae9304c092709dc0 200
+[debug] [2026-11-10T01:27:51.563Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/harpa-palavra/versions/4b54deb173654ad4/files/217732913a8f297258b36728cfd89599b6d92dd0dab249fdae9304c092709dc0 [stream]
+[debug] [2026-11-10T01:27:51.563Z] [hosting][upload queue][FINAL] {"max":1821,"min":1269,"avg":1371.076923076923,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":1823}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[harpa-palavra]: file upload complete 
+[debug] [2026-11-10T01:27:51.564Z] [hosting] deploy completed after 2483ms
+[debug] [2026-11-10T01:27:51.564Z] [
+  {
+    "config": {
+      "public": ".next-release",
+      "cleanUrls": true,
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            }
+          ]
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "harpa-palavra"
+    },
+    "version": "projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4"
+  }
+]
+[info] i  hosting[harpa-palavra]: finalizing version... 
+[debug] [2026-11-10T01:27:51.566Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:51.566Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:51.567Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/4b54deb173654ad4 updateMask=status%2Cconfig
+[debug] [2026-11-10T01:27:51.567Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/4b54deb173654ad4 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"**","headers":{"Cache-Control":"no-cache, no-store, must-revalidate"}}],"cleanUrls":true}}
+[debug] [2026-11-10T01:27:51.998Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/4b54deb173654ad4 200
+[debug] [2026-11-10T01:27:51.998Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/versions/4b54deb173654ad4 {"name":"projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:27:48.962608Z","createUser":{"email":"jusanmagno@gmail.com"},"finalizeTime":"2026-11-10T01:27:52.138252Z","finalizeUser":{"email":"jusanmagno@gmail.com"}}
+[debug] [2026-11-10T01:27:51.998Z] [hosting] finalized version for harpa-palavra:[object Object]
+[info] ✔  hosting[harpa-palavra]: version finalized 
+[info] i  hosting[harpa-palavra]: releasing new version... 
+[debug] [2026-11-10T01:27:51.999Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:51.999Z] Checked if tokens are valid: true, expires at: 1794277597204
+[debug] [2026-11-10T01:27:51.999Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases versionName=projects%2F264623226795%2Fsites%2Fharpa-palavra%2Fversions%2F4b54deb173654ad4
+[debug] [2026-11-10T01:27:51.999Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {}
+[debug] [2026-11-10T01:27:52.452Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases 200
+[debug] [2026-11-10T01:27:52.453Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/harpa-palavra/channels/live/releases {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794274072008000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:27:48.962608Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:27:52.138252Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:27:52.008Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[debug] [2026-11-10T01:27:52.453Z] [hosting] release: {"name":"projects/264623226795/sites/harpa-palavra/channels/live/releases/1794274072008000","version":{"name":"projects/264623226795/sites/harpa-palavra/versions/4b54deb173654ad4","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache, no-store, must-revalidate"},"glob":"**"}],"rewrites":[{"glob":"**","path":"/index.html"}],"cleanUrls":true},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-11-10T01:27:48.962608Z","createUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"},"finalizeTime":"2026-11-10T01:27:52.138252Z","finalizeUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}},"type":"DEPLOY","releaseTime":"2026-11-10T01:27:52.008Z","releaseUser":{"email":"jusanmagno@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJ4SWt2SZSwwklE6uJXgvcB6OGfP4JjEnKYIWTwjb8bQuODzMVJxg"}}
+[info] ✔  hosting[harpa-palavra]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/harpa-palavra/overview
+[info] Hosting URL: https://harpa-palavra.web.app
