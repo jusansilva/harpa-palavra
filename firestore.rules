@@ -10,12 +10,15 @@ service cloud.firestore {
     match /bibleVerses/{verse} { allow read: if true; allow write: if admin(); }
     match /contentSources/{source} { allow read: if true; allow write: if admin(); }
     match /importJobs/{job} { allow read, write: if admin(); }
+    match /applicationLogs/{log} { allow create: if signedIn(); allow read: if admin(); allow update, delete: if false; }
     match /users/{userId} {
-      allow read, create, update: if signedIn() && request.auth.uid == userId;
+      allow read: if (signedIn() && request.auth.uid == userId) || admin();
+      allow create, update: if signedIn() && request.auth.uid == userId;
       allow delete: if false;
       match /favorites/{favorite} { allow read, write: if signedIn() && request.auth.uid == userId; }
       match /playlists/{playlist} { allow read, write: if signedIn() && request.auth.uid == userId; }
       match /readingProgress/{progress} { allow read, write: if signedIn() && request.auth.uid == userId; }
+      match /studyProgress/{progress} { allow read, write: if signedIn() && request.auth.uid == userId; }
       match /studyNotes/{note} { allow read, write: if signedIn() && request.auth.uid == userId; }
     }
   }

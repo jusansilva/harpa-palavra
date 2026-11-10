@@ -1,3 +1,3 @@
 "use client";
 import { useEffect } from "react";
-export default function PwaRegister(){useEffect(()=>{if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js").catch(()=>undefined)},[]);return null;}
+export default function PwaRegister(){useEffect(()=>{if(!("serviceWorker" in navigator))return;let reloading=false;let timer:number|undefined;let check=()=>undefined;const reload=()=>{if(!reloading){reloading=true;window.location.reload()}};navigator.serviceWorker.addEventListener("controllerchange",reload);navigator.serviceWorker.register("/sw.js").then(registration=>{check=()=>{if(navigator.onLine)registration.update().catch(()=>undefined)};check();timer=window.setInterval(check,60000);window.addEventListener("online",check)}).catch(()=>undefined);return()=>{navigator.serviceWorker.removeEventListener("controllerchange",reload);window.removeEventListener("online",check);if(timer)window.clearInterval(timer)}},[]);return null;}
